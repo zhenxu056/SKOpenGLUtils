@@ -14,8 +14,41 @@
 		171F61932457D67F001C6683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171F61922457D67F001C6683 /* Assets.xcassets */; };
 		171F61962457D67F001C6683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171F61942457D67F001C6683 /* LaunchScreen.storyboard */; };
 		171F61992457D67F001C6683 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 171F61982457D67F001C6683 /* main.m */; };
+		1729C1652457FE56006990F7 /* SKOPenGLUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1729C15E2457FE55006990F7 /* SKOPenGLUtils.framework */; };
+		1729C1662457FE56006990F7 /* SKOPenGLUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1729C15E2457FE55006990F7 /* SKOPenGLUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1729C1762457FF2D006990F7 /* NSBundle+SKResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729C16F2457FF2D006990F7 /* NSBundle+SKResource.m */; };
+		1729C1772457FF2D006990F7 /* NSBundle+SKResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 1729C1702457FF2D006990F7 /* NSBundle+SKResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1729C1782457FF2D006990F7 /* SKPixelBufferHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729C1722457FF2D006990F7 /* SKPixelBufferHelper.m */; };
+		1729C1792457FF2D006990F7 /* SKShaderHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1729C1732457FF2D006990F7 /* SKShaderHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1729C17A2457FF2D006990F7 /* SKShaderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729C1742457FF2D006990F7 /* SKShaderHelper.m */; };
+		1729C17B2457FF2D006990F7 /* SKPixelBufferHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1729C1752457FF2D006990F7 /* SKPixelBufferHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1729C17D2457FF45006990F7 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 1729C17C2457FF44006990F7 /* Assets */; };
 		2E739CC8078502CD094DD248 /* libPods-SKOpenGLUtilsLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04285F690D5EF7E6FA5A860C /* libPods-SKOpenGLUtilsLib.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1729C1632457FE56006990F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 171F617B2457D67B001C6683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1729C15D2457FE55006990F7;
+			remoteInfo = SKOPenGLUtils;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1729C16A2457FE56006990F7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1729C1662457FE56006990F7 /* SKOPenGLUtils.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		04285F690D5EF7E6FA5A860C /* libPods-SKOpenGLUtilsLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SKOpenGLUtilsLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +64,15 @@
 		171F61952457D67F001C6683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		171F61972457D67F001C6683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		171F61982457D67F001C6683 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1729C15E2457FE55006990F7 /* SKOPenGLUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKOPenGLUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1729C1612457FE56006990F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1729C16F2457FF2D006990F7 /* NSBundle+SKResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+SKResource.m"; sourceTree = "<group>"; };
+		1729C1702457FF2D006990F7 /* NSBundle+SKResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+SKResource.h"; sourceTree = "<group>"; };
+		1729C1722457FF2D006990F7 /* SKPixelBufferHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKPixelBufferHelper.m; sourceTree = "<group>"; };
+		1729C1732457FF2D006990F7 /* SKShaderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKShaderHelper.h; sourceTree = "<group>"; };
+		1729C1742457FF2D006990F7 /* SKShaderHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKShaderHelper.m; sourceTree = "<group>"; };
+		1729C1752457FF2D006990F7 /* SKPixelBufferHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPixelBufferHelper.h; sourceTree = "<group>"; };
+		1729C17C2457FF44006990F7 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = ../../../SKOpenGLUtils/Assets; sourceTree = "<group>"; };
 		5FDC2716756ADC414579CD6E /* Pods-SKOpenGLUtilsLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKOpenGLUtilsLib.release.xcconfig"; path = "Target Support Files/Pods-SKOpenGLUtilsLib/Pods-SKOpenGLUtilsLib.release.xcconfig"; sourceTree = "<group>"; };
 		73B7D0DA835DF0A6EFE7771D /* Pods-SKOpenGLUtilsLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKOpenGLUtilsLib.debug.xcconfig"; path = "Target Support Files/Pods-SKOpenGLUtilsLib/Pods-SKOpenGLUtilsLib.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +83,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E739CC8078502CD094DD248 /* libPods-SKOpenGLUtilsLib.a in Frameworks */,
+				1729C1652457FE56006990F7 /* SKOPenGLUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1729C15B2457FE55006990F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				171F61852457D67B001C6683 /* SKOpenGLUtilsLib */,
+				1729C15F2457FE56006990F7 /* SKOPenGLUtils */,
 				171F61842457D67B001C6683 /* Products */,
 				A10AC0C7A43E06520FB89F5F /* Pods */,
 				DD2E78B422206804B0CC1A76 /* Frameworks */,
@@ -61,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				171F61832457D67B001C6683 /* SKOpenGLUtilsLib.app */,
+				1729C15E2457FE55006990F7 /* SKOPenGLUtils.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +135,46 @@
 			path = SKOpenGLUtilsLib;
 			sourceTree = "<group>";
 		};
+		1729C15F2457FE56006990F7 /* SKOPenGLUtils */ = {
+			isa = PBXGroup;
+			children = (
+				1729C17C2457FF44006990F7 /* Assets */,
+				1729C16D2457FF2D006990F7 /* Classes */,
+				1729C1612457FE56006990F7 /* Info.plist */,
+			);
+			path = SKOPenGLUtils;
+			sourceTree = "<group>";
+		};
+		1729C16D2457FF2D006990F7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1729C16E2457FF2D006990F7 /* Category */,
+				1729C1712457FF2D006990F7 /* Utils */,
+			);
+			name = Classes;
+			path = ../../../SKOpenGLUtils/Classes;
+			sourceTree = "<group>";
+		};
+		1729C16E2457FF2D006990F7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1729C16F2457FF2D006990F7 /* NSBundle+SKResource.m */,
+				1729C1702457FF2D006990F7 /* NSBundle+SKResource.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		1729C1712457FF2D006990F7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1729C1722457FF2D006990F7 /* SKPixelBufferHelper.m */,
+				1729C1732457FF2D006990F7 /* SKShaderHelper.h */,
+				1729C1742457FF2D006990F7 /* SKShaderHelper.m */,
+				1729C1752457FF2D006990F7 /* SKPixelBufferHelper.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		A10AC0C7A43E06520FB89F5F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +194,19 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		1729C1592457FE55006990F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1729C17B2457FF2D006990F7 /* SKPixelBufferHelper.h in Headers */,
+				1729C1792457FF2D006990F7 /* SKShaderHelper.h in Headers */,
+				1729C1772457FF2D006990F7 /* NSBundle+SKResource.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		171F61822457D67B001C6683 /* SKOpenGLUtilsLib */ = {
 			isa = PBXNativeTarget;
@@ -112,15 +217,35 @@
 				171F61802457D67B001C6683 /* Frameworks */,
 				171F61812457D67B001C6683 /* Resources */,
 				CCAF99CFA706318CDCE5794C /* [CP] Copy Pods Resources */,
+				1729C16A2457FE56006990F7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1729C1642457FE56006990F7 /* PBXTargetDependency */,
 			);
 			name = SKOpenGLUtilsLib;
 			productName = SKOpenGLUtilsLib;
 			productReference = 171F61832457D67B001C6683 /* SKOpenGLUtilsLib.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1729C15D2457FE55006990F7 /* SKOPenGLUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1729C1672457FE56006990F7 /* Build configuration list for PBXNativeTarget "SKOPenGLUtils" */;
+			buildPhases = (
+				1729C1592457FE55006990F7 /* Headers */,
+				1729C15A2457FE55006990F7 /* Sources */,
+				1729C15B2457FE55006990F7 /* Frameworks */,
+				1729C15C2457FE55006990F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SKOPenGLUtils;
+			productName = SKOPenGLUtils;
+			productReference = 1729C15E2457FE55006990F7 /* SKOPenGLUtils.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -132,6 +257,9 @@
 				ORGANIZATIONNAME = Sunflower;
 				TargetAttributes = {
 					171F61822457D67B001C6683 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					1729C15D2457FE55006990F7 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
@@ -150,6 +278,7 @@
 			projectRoot = "";
 			targets = (
 				171F61822457D67B001C6683 /* SKOpenGLUtilsLib */,
+				1729C15D2457FE55006990F7 /* SKOPenGLUtils */,
 			);
 		};
 /* End PBXProject section */
@@ -162,6 +291,14 @@
 				171F61962457D67F001C6683 /* LaunchScreen.storyboard in Resources */,
 				171F61932457D67F001C6683 /* Assets.xcassets in Resources */,
 				171F61912457D67B001C6683 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1729C15C2457FE55006990F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1729C17D2457FF45006990F7 /* Assets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +358,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1729C15A2457FE55006990F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1729C1782457FF2D006990F7 /* SKPixelBufferHelper.m in Sources */,
+				1729C1762457FF2D006990F7 /* NSBundle+SKResource.m in Sources */,
+				1729C17A2457FF2D006990F7 /* SKShaderHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1729C1642457FE56006990F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1729C15D2457FE55006990F7 /* SKOPenGLUtils */;
+			targetProxy = 1729C1632457FE56006990F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		171F618F2457D67B001C6683 /* Main.storyboard */ = {
@@ -391,6 +546,67 @@
 			};
 			name = Release;
 		};
+		1729C1682457FE56006990F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3NPP25U68Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SKOPenGLUtils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = Sunflower.SKOPenGLUtils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1729C1692457FE56006990F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3NPP25U68Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SKOPenGLUtils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = Sunflower.SKOPenGLUtils;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -408,6 +624,15 @@
 			buildConfigurations = (
 				171F619D2457D67F001C6683 /* Debug */,
 				171F619E2457D67F001C6683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1729C1672457FE56006990F7 /* Build configuration list for PBXNativeTarget "SKOPenGLUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1729C1682457FE56006990F7 /* Debug */,
+				1729C1692457FE56006990F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
