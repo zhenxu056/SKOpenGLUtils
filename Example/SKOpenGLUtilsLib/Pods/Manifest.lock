@@ -1,0 +1,16 @@
+PODS:
+  - SKOpenGLUtils (1.0.0)
+
+DEPENDENCIES:
+  - SKOpenGLUtils (from `../../`)
+
+EXTERNAL SOURCES:
+  SKOpenGLUtils:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  SKOpenGLUtils: 268f994337f83cf47fb95a76f936ee97d137dc62
+
+PODFILE CHECKSUM: 2fe4b3914f5489021814f7cd11182194f001dd04
+
+COCOAPODS: 1.9.1

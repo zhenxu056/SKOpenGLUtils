@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		171F61882457D67B001C6683 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 171F61872457D67B001C6683 /* AppDelegate.m */; };
+		171F618B2457D67B001C6683 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 171F618A2457D67B001C6683 /* SceneDelegate.m */; };
+		171F618E2457D67B001C6683 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 171F618D2457D67B001C6683 /* ViewController.m */; };
+		171F61912457D67B001C6683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171F618F2457D67B001C6683 /* Main.storyboard */; };
+		171F61932457D67F001C6683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171F61922457D67F001C6683 /* Assets.xcassets */; };
+		171F61962457D67F001C6683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171F61942457D67F001C6683 /* LaunchScreen.storyboard */; };
+		171F61992457D67F001C6683 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 171F61982457D67F001C6683 /* main.m */; };
+		2E739CC8078502CD094DD248 /* libPods-SKOpenGLUtilsLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04285F690D5EF7E6FA5A860C /* libPods-SKOpenGLUtilsLib.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04285F690D5EF7E6FA5A860C /* libPods-SKOpenGLUtilsLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SKOpenGLUtilsLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		171F61832457D67B001C6683 /* SKOpenGLUtilsLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKOpenGLUtilsLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		171F61862457D67B001C6683 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		171F61872457D67B001C6683 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		171F61892457D67B001C6683 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		171F618A2457D67B001C6683 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		171F618C2457D67B001C6683 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		171F618D2457D67B001C6683 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		171F61902457D67B001C6683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		171F61922457D67F001C6683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		171F61952457D67F001C6683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		171F61972457D67F001C6683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		171F61982457D67F001C6683 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5FDC2716756ADC414579CD6E /* Pods-SKOpenGLUtilsLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKOpenGLUtilsLib.release.xcconfig"; path = "Target Support Files/Pods-SKOpenGLUtilsLib/Pods-SKOpenGLUtilsLib.release.xcconfig"; sourceTree = "<group>"; };
+		73B7D0DA835DF0A6EFE7771D /* Pods-SKOpenGLUtilsLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKOpenGLUtilsLib.debug.xcconfig"; path = "Target Support Files/Pods-SKOpenGLUtilsLib/Pods-SKOpenGLUtilsLib.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		171F61802457D67B001C6683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E739CC8078502CD094DD248 /* libPods-SKOpenGLUtilsLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		171F617A2457D67B001C6683 = {
+			isa = PBXGroup;
+			children = (
+				171F61852457D67B001C6683 /* SKOpenGLUtilsLib */,
+				171F61842457D67B001C6683 /* Products */,
+				A10AC0C7A43E06520FB89F5F /* Pods */,
+				DD2E78B422206804B0CC1A76 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		171F61842457D67B001C6683 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				171F61832457D67B001C6683 /* SKOpenGLUtilsLib.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		171F61852457D67B001C6683 /* SKOpenGLUtilsLib */ = {
+			isa = PBXGroup;
+			children = (
+				171F61862457D67B001C6683 /* AppDelegate.h */,
+				171F61872457D67B001C6683 /* AppDelegate.m */,
+				171F61892457D67B001C6683 /* SceneDelegate.h */,
+				171F618A2457D67B001C6683 /* SceneDelegate.m */,
+				171F618C2457D67B001C6683 /* ViewController.h */,
+				171F618D2457D67B001C6683 /* ViewController.m */,
+				171F618F2457D67B001C6683 /* Main.storyboard */,
+				171F61922457D67F001C6683 /* Assets.xcassets */,
+				171F61942457D67F001C6683 /* LaunchScreen.storyboard */,
+				171F61972457D67F001C6683 /* Info.plist */,
+				171F61982457D67F001C6683 /* main.m */,
+			);
+			path = SKOpenGLUtilsLib;
+			sourceTree = "<group>";
+		};
+		A10AC0C7A43E06520FB89F5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73B7D0DA835DF0A6EFE7771D /* Pods-SKOpenGLUtilsLib.debug.xcconfig */,
+				5FDC2716756ADC414579CD6E /* Pods-SKOpenGLUtilsLib.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DD2E78B422206804B0CC1A76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04285F690D5EF7E6FA5A860C /* libPods-SKOpenGLUtilsLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		171F61822457D67B001C6683 /* SKOpenGLUtilsLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 171F619C2457D67F001C6683 /* Build configuration list for PBXNativeTarget "SKOpenGLUtilsLib" */;
+			buildPhases = (
+				F5B4F6ABCA423A0ACAD01BD3 /* [CP] Check Pods Manifest.lock */,
+				171F617F2457D67B001C6683 /* Sources */,
+				171F61802457D67B001C6683 /* Frameworks */,
+				171F61812457D67B001C6683 /* Resources */,
+				CCAF99CFA706318CDCE5794C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SKOpenGLUtilsLib;
+			productName = SKOpenGLUtilsLib;
+			productReference = 171F61832457D67B001C6683 /* SKOpenGLUtilsLib.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		171F617B2457D67B001C6683 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Sunflower;
+				TargetAttributes = {
+					171F61822457D67B001C6683 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 171F617E2457D67B001C6683 /* Build configuration list for PBXProject "SKOpenGLUtilsLib" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 171F617A2457D67B001C6683;
+			productRefGroup = 171F61842457D67B001C6683 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				171F61822457D67B001C6683 /* SKOpenGLUtilsLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		171F61812457D67B001C6683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171F61962457D67F001C6683 /* LaunchScreen.storyboard in Resources */,
+				171F61932457D67F001C6683 /* Assets.xcassets in Resources */,
+				171F61912457D67B001C6683 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CCAF99CFA706318CDCE5794C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SKOpenGLUtilsLib/Pods-SKOpenGLUtilsLib-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SKOpenGLUtilsLib/Pods-SKOpenGLUtilsLib-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SKOpenGLUtilsLib/Pods-SKOpenGLUtilsLib-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5B4F6ABCA423A0ACAD01BD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SKOpenGLUtilsLib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		171F617F2457D67B001C6683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171F618E2457D67B001C6683 /* ViewController.m in Sources */,
+				171F61882457D67B001C6683 /* AppDelegate.m in Sources */,
+				171F61992457D67F001C6683 /* main.m in Sources */,
+				171F618B2457D67B001C6683 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		171F618F2457D67B001C6683 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				171F61902457D67B001C6683 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		171F61942457D67F001C6683 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				171F61952457D67F001C6683 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		171F619A2457D67F001C6683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		171F619B2457D67F001C6683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		171F619D2457D67F001C6683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73B7D0DA835DF0A6EFE7771D /* Pods-SKOpenGLUtilsLib.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NPP25U68Y;
+				INFOPLIST_FILE = SKOpenGLUtilsLib/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Sunflower.SKOpenGLUtilsLib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		171F619E2457D67F001C6683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FDC2716756ADC414579CD6E /* Pods-SKOpenGLUtilsLib.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NPP25U68Y;
+				INFOPLIST_FILE = SKOpenGLUtilsLib/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Sunflower.SKOpenGLUtilsLib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		171F617E2457D67B001C6683 /* Build configuration list for PBXProject "SKOpenGLUtilsLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				171F619A2457D67F001C6683 /* Debug */,
+				171F619B2457D67F001C6683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		171F619C2457D67F001C6683 /* Build configuration list for PBXNativeTarget "SKOpenGLUtilsLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				171F619D2457D67F001C6683 /* Debug */,
+				171F619E2457D67F001C6683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 171F617B2457D67B001C6683 /* Project object */;
+}

@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11910B0A1CB976E66375E3C41B63B5C9 /* Pods-SKOpenGLUtilsLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C96AA7271982A5A38CC5B016F7A25285 /* Pods-SKOpenGLUtilsLib-dummy.m */; };
+		20E2F7773895B3FD12EBE6E640446468 /* NSBundle+SKResource.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B16CB50FBBBA19F09171C63C0F45DD /* NSBundle+SKResource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		488EFABB2F047BF32AF3DACFC862C3AB /* SKShaderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC191FB66167DC5174CC3FC21D34983 /* SKShaderHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5D9F2E5D5159B59BA90769C8A1711DEF /* SKPixelBufferHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2937B250195A9CC3551B04DBC510E698 /* SKPixelBufferHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A5236F3C78E6E8F4D31FE3C673EAA6FE /* NSBundle+SKResource.m in Sources */ = {isa = PBXBuildFile; fileRef = A250AED5640FFF0FC1EDDBE0DD175488 /* NSBundle+SKResource.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AFB90F5C1ADA7C8E986E7F2F7816F2D0 /* SKPixelBufferHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3610E43F9E64D982C57844E23DFEC694 /* SKPixelBufferHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C40DB4A026A5CDC0FE34BD99EFE7F5A2 /* SKOpenGLUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 254C89C3A7DD92165EBD0C5B851875F7 /* SKOpenGLUtils-dummy.m */; };
+		FBD5C9839B2FDEBBA22AB3E68922EED6 /* SKShaderHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 120FB1A036829C8F53DFC48586A668C3 /* SKShaderHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0EF7079ADE0354B03CCB3A1CE8D926A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8418D0A084138F0C9FBEE821FF1A3761;
+			remoteInfo = SKOpenGLUtils;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		007A4F2D3B6138BF8C9ABEE0A8257EB2 /* SKResource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SKResource.bundle; path = SKOpenGLUtils/Assets/SKResource.bundle; sourceTree = "<group>"; };
+		0758DE4FB6E81DC3234E68470ACB81AB /* Pods-SKOpenGLUtilsLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SKOpenGLUtilsLib.debug.xcconfig"; sourceTree = "<group>"; };
+		08E3C6928CAC8B9C79789214C6B01DEC /* SKOpenGLUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SKOpenGLUtils.release.xcconfig; sourceTree = "<group>"; };
+		120FB1A036829C8F53DFC48586A668C3 /* SKShaderHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKShaderHelper.h; sourceTree = "<group>"; };
+		198CDC45130863861576814C7BFE47B5 /* SKOpenGLUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SKOpenGLUtils.debug.xcconfig; sourceTree = "<group>"; };
+		1D07B90EE00CB997A581031A34D8E721 /* Pods-SKOpenGLUtilsLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SKOpenGLUtilsLib.release.xcconfig"; sourceTree = "<group>"; };
+		254C89C3A7DD92165EBD0C5B851875F7 /* SKOpenGLUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SKOpenGLUtils-dummy.m"; sourceTree = "<group>"; };
+		2937B250195A9CC3551B04DBC510E698 /* SKPixelBufferHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKPixelBufferHelper.h; sourceTree = "<group>"; };
+		3610E43F9E64D982C57844E23DFEC694 /* SKPixelBufferHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKPixelBufferHelper.m; sourceTree = "<group>"; };
+		36E13107C50C028B2568D6DABFBA634F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3AFEDFFF7FFF571E5BB2CACA46C7F51B /* Pods-SKOpenGLUtilsLib-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SKOpenGLUtilsLib-acknowledgements.plist"; sourceTree = "<group>"; };
+		456781ADB658D2942ED2441D9CEE7F63 /* libPods-SKOpenGLUtilsLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SKOpenGLUtilsLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F16C4452F7EB3C3096A17A57BE9B495 /* Pods-SKOpenGLUtilsLib-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SKOpenGLUtilsLib-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8B81E7AFF91948906E5BE7875E9DE73B /* SKOpenGLUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SKOpenGLUtils.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A250AED5640FFF0FC1EDDBE0DD175488 /* NSBundle+SKResource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+SKResource.m"; sourceTree = "<group>"; };
+		B0D100000DFB7195FA2FE13E61EBF127 /* libSKOpenGLUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSKOpenGLUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B16CB50FBBBA19F09171C63C0F45DD /* NSBundle+SKResource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSBundle+SKResource.h"; sourceTree = "<group>"; };
+		B719ED70793BF7408BFB344A4E879B21 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BDC191FB66167DC5174CC3FC21D34983 /* SKShaderHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKShaderHelper.m; sourceTree = "<group>"; };
+		BEE5E978466A79BACC969377DE13F2FC /* SKOpenGLUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SKOpenGLUtils-prefix.pch"; sourceTree = "<group>"; };
+		C35C8A793602015F2DE66B9465062F6D /* Pods-SKOpenGLUtilsLib-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SKOpenGLUtilsLib-resources.sh"; sourceTree = "<group>"; };
+		C96AA7271982A5A38CC5B016F7A25285 /* Pods-SKOpenGLUtilsLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SKOpenGLUtilsLib-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		099D3512B1040DA9F8E9CE78B1A28844 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5809B7DD82373775D1495BF63C7E51CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05C0693C7EE4DB97095827374A1F15D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				007A4F2D3B6138BF8C9ABEE0A8257EB2 /* SKResource.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3B26A59CCEFDE9DA66557D917CB2A036 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2937B250195A9CC3551B04DBC510E698 /* SKPixelBufferHelper.h */,
+				3610E43F9E64D982C57844E23DFEC694 /* SKPixelBufferHelper.m */,
+				120FB1A036829C8F53DFC48586A668C3 /* SKShaderHelper.h */,
+				BDC191FB66167DC5174CC3FC21D34983 /* SKShaderHelper.m */,
+			);
+			name = Utils;
+			path = SKOpenGLUtils/Classes/Utils;
+			sourceTree = "<group>";
+		};
+		57A60785827988CFC809AD58468A6985 /* Pods-SKOpenGLUtilsLib */ = {
+			isa = PBXGroup;
+			children = (
+				5F16C4452F7EB3C3096A17A57BE9B495 /* Pods-SKOpenGLUtilsLib-acknowledgements.markdown */,
+				3AFEDFFF7FFF571E5BB2CACA46C7F51B /* Pods-SKOpenGLUtilsLib-acknowledgements.plist */,
+				C96AA7271982A5A38CC5B016F7A25285 /* Pods-SKOpenGLUtilsLib-dummy.m */,
+				C35C8A793602015F2DE66B9465062F6D /* Pods-SKOpenGLUtilsLib-resources.sh */,
+				0758DE4FB6E81DC3234E68470ACB81AB /* Pods-SKOpenGLUtilsLib.debug.xcconfig */,
+				1D07B90EE00CB997A581031A34D8E721 /* Pods-SKOpenGLUtilsLib.release.xcconfig */,
+			);
+			name = "Pods-SKOpenGLUtilsLib";
+			path = "Target Support Files/Pods-SKOpenGLUtilsLib";
+			sourceTree = "<group>";
+		};
+		5AC91343ED074F81D52139DB3943A5E2 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B5B16CB50FBBBA19F09171C63C0F45DD /* NSBundle+SKResource.h */,
+				A250AED5640FFF0FC1EDDBE0DD175488 /* NSBundle+SKResource.m */,
+			);
+			name = Category;
+			path = SKOpenGLUtils/Classes/Category;
+			sourceTree = "<group>";
+		};
+		6754F73ABFEF2A2685F6A07167B0A80C /* SKOpenGLUtils */ = {
+			isa = PBXGroup;
+			children = (
+				5AC91343ED074F81D52139DB3943A5E2 /* Category */,
+				3B26A59CCEFDE9DA66557D917CB2A036 /* Utils */,
+				A7BEE2EE26A0031AB8352760A01AA58A /* Pod */,
+				05C0693C7EE4DB97095827374A1F15D8 /* Resources */,
+				B8ACAE9230CD8B1E00BA46C574B234D0 /* Support Files */,
+			);
+			name = SKOpenGLUtils;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		6995DFD35D2BBFBBCBCF97FCD1CA61D4 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6754F73ABFEF2A2685F6A07167B0A80C /* SKOpenGLUtils */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A7BEE2EE26A0031AB8352760A01AA58A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				36E13107C50C028B2568D6DABFBA634F /* LICENSE */,
+				B719ED70793BF7408BFB344A4E879B21 /* README.md */,
+				8B81E7AFF91948906E5BE7875E9DE73B /* SKOpenGLUtils.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		B8ACAE9230CD8B1E00BA46C574B234D0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				254C89C3A7DD92165EBD0C5B851875F7 /* SKOpenGLUtils-dummy.m */,
+				BEE5E978466A79BACC969377DE13F2FC /* SKOpenGLUtils-prefix.pch */,
+				198CDC45130863861576814C7BFE47B5 /* SKOpenGLUtils.debug.xcconfig */,
+				08E3C6928CAC8B9C79789214C6B01DEC /* SKOpenGLUtils.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/SKOpenGLUtilsLib/Pods/Target Support Files/SKOpenGLUtils";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				6995DFD35D2BBFBBCBCF97FCD1CA61D4 /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				F6F0F9613EDA19B51351BE023854A42C /* Products */,
+				FCE6941BFA8619D201D5B8AF92AB28A1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6F0F9613EDA19B51351BE023854A42C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				456781ADB658D2942ED2441D9CEE7F63 /* libPods-SKOpenGLUtilsLib.a */,
+				B0D100000DFB7195FA2FE13E61EBF127 /* libSKOpenGLUtils.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCE6941BFA8619D201D5B8AF92AB28A1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				57A60785827988CFC809AD58468A6985 /* Pods-SKOpenGLUtilsLib */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		32B683601D01A6A50918808B66D96CC2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E2F7773895B3FD12EBE6E640446468 /* NSBundle+SKResource.h in Headers */,
+				5D9F2E5D5159B59BA90769C8A1711DEF /* SKPixelBufferHelper.h in Headers */,
+				FBD5C9839B2FDEBBA22AB3E68922EED6 /* SKShaderHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74A1B1DC15BBD3DD15838D03C4E91F2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3AB73F6AE205F28A36A78CA6DAD60549 /* Pods-SKOpenGLUtilsLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7C39CFEBBD9DCE8240D7A7EA825C0E7 /* Build configuration list for PBXNativeTarget "Pods-SKOpenGLUtilsLib" */;
+			buildPhases = (
+				74A1B1DC15BBD3DD15838D03C4E91F2D /* Headers */,
+				62F3BCDE2F8299737E81E4C3DCFB96DC /* Sources */,
+				5809B7DD82373775D1495BF63C7E51CF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFD64110CAE093160AA2AB947513B36F /* PBXTargetDependency */,
+			);
+			name = "Pods-SKOpenGLUtilsLib";
+			productName = "Pods-SKOpenGLUtilsLib";
+			productReference = 456781ADB658D2942ED2441D9CEE7F63 /* libPods-SKOpenGLUtilsLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8418D0A084138F0C9FBEE821FF1A3761 /* SKOpenGLUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38B6E3F13BF989468F60FE725DC79E87 /* Build configuration list for PBXNativeTarget "SKOpenGLUtils" */;
+			buildPhases = (
+				32B683601D01A6A50918808B66D96CC2 /* Headers */,
+				0077458C05582DFCD8482C74D11F1C2E /* Sources */,
+				099D3512B1040DA9F8E9CE78B1A28844 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SKOpenGLUtils;
+			productName = SKOpenGLUtils;
+			productReference = B0D100000DFB7195FA2FE13E61EBF127 /* libSKOpenGLUtils.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F6F0F9613EDA19B51351BE023854A42C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AB73F6AE205F28A36A78CA6DAD60549 /* Pods-SKOpenGLUtilsLib */,
+				8418D0A084138F0C9FBEE821FF1A3761 /* SKOpenGLUtils */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0077458C05582DFCD8482C74D11F1C2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5236F3C78E6E8F4D31FE3C673EAA6FE /* NSBundle+SKResource.m in Sources */,
+				C40DB4A026A5CDC0FE34BD99EFE7F5A2 /* SKOpenGLUtils-dummy.m in Sources */,
+				AFB90F5C1ADA7C8E986E7F2F7816F2D0 /* SKPixelBufferHelper.m in Sources */,
+				488EFABB2F047BF32AF3DACFC862C3AB /* SKShaderHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62F3BCDE2F8299737E81E4C3DCFB96DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11910B0A1CB976E66375E3C41B63B5C9 /* Pods-SKOpenGLUtilsLib-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFD64110CAE093160AA2AB947513B36F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SKOpenGLUtils;
+			target = 8418D0A084138F0C9FBEE821FF1A3761 /* SKOpenGLUtils */;
+			targetProxy = 0EF7079ADE0354B03CCB3A1CE8D926A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5114145493E58E30A76353B95AF1933F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0758DE4FB6E81DC3234E68470ACB81AB /* Pods-SKOpenGLUtilsLib.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71D63A89D24D3D12F7B876B73CD301B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08E3C6928CAC8B9C79789214C6B01DEC /* SKOpenGLUtils.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SKOpenGLUtils/SKOpenGLUtils-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SKOpenGLUtils;
+				PRODUCT_NAME = SKOpenGLUtils;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C5FE3047EF9840E0776B2F92CB37FC2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D07B90EE00CB997A581031A34D8E721 /* Pods-SKOpenGLUtilsLib.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC4E208D65A3A138A2FF162E9B5F29C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 198CDC45130863861576814C7BFE47B5 /* SKOpenGLUtils.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SKOpenGLUtils/SKOpenGLUtils-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SKOpenGLUtils;
+				PRODUCT_NAME = SKOpenGLUtils;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38B6E3F13BF989468F60FE725DC79E87 /* Build configuration list for PBXNativeTarget "SKOpenGLUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4E208D65A3A138A2FF162E9B5F29C4 /* Debug */,
+				71D63A89D24D3D12F7B876B73CD301B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7C39CFEBBD9DCE8240D7A7EA825C0E7 /* Build configuration list for PBXNativeTarget "Pods-SKOpenGLUtilsLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5114145493E58E30A76353B95AF1933F /* Debug */,
+				C5FE3047EF9840E0776B2F92CB37FC2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
