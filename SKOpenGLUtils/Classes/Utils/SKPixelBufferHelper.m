@@ -437,5 +437,56 @@
     
     return image;
 }
+ 
+
++ (CVPixelBufferRef)pixelBufferFromImage:(UIImage *)image {
+    
+    NSDictionary *options = @{
+                              (NSString*)kCVPixelBufferCGImageCompatibilityKey : @YES,
+                              (NSString*)kCVPixelBufferCGBitmapContextCompatibilityKey : @YES,
+                              (NSString*)kCVPixelBufferIOSurfacePropertiesKey: [NSDictionary dictionary]
+                              };
+    
+    CVPixelBufferRef pxbuffer = NULL;
+    CGFloat frameWidth = CGImageGetWidth(image.CGImage);
+    CGFloat frameHeight = CGImageGetHeight(image.CGImage);
+    CVReturn status = CVPixelBufferCreate(
+                                          kCFAllocatorDefault,
+                                          frameWidth,
+                                          frameHeight,
+                                          kCVPixelFormatType_32BGRA,
+                                          (__bridge CFDictionaryRef)options,
+                                          &pxbuffer);
+    
+    NSParameterAssert(status == kCVReturnSuccess && pxbuffer != NULL);
+    
+    CVPixelBufferLockBaseAddress(pxbuffer, 0);
+    
+    void *pxdata = CVPixelBufferGetBaseAddress(pxbuffer);
+    
+    NSParameterAssert(pxdata != NULL);
+    
+    CGColorSpaceRef rgbColorSpace = CGColorSpaceCreateDeviceRGB();
+    
+    CGContextRef context = CGBitmapContextCreate(
+                                                 pxdata,
+                                                 frameWidth,
+                                                 frameHeight,
+                                                 8,
+                                                 CVPixelBufferGetBytesPerRow(pxbuffer),
+                                                 rgbColorSpace, kCGImageAlphaNoneSkipFirst | kCGBitmapByteOrder32Little);
+    NSParameterAssert(context);
+    
+    CGContextConcatCTM(context, CGAffineTransformIdentity);
+    
+    CGContextDrawImage(context, CGRectMake(0, 0, frameWidth, frameHeight), image.CGImage);
+    
+    CGColorSpaceRelease(rgbColorSpace);
+    CGContextRelease(context);
+    CVPixelBufferUnlockBaseAddress(pxbuffer, 0);
+    //    CFRelease(rgbColorSpace) ;
+    
+    return pxbuffer;
+}
 
 @end

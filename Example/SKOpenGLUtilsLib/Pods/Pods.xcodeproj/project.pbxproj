@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		07852386493A84FCA75C6CA6F7F667D0 /* SKAudioFileStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FCE65575D18DF246E15EC6A86B52403 /* SKAudioFileStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		11910B0A1CB976E66375E3C41B63B5C9 /* Pods-SKOpenGLUtilsLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C96AA7271982A5A38CC5B016F7A25285 /* Pods-SKOpenGLUtilsLib-dummy.m */; };
+		17705A2A256F5BD500B834DA /* UIImage+SKImageHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 17705A28256F5BD500B834DA /* UIImage+SKImageHelper.h */; };
+		17705A2B256F5BD500B834DA /* UIImage+SKImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 17705A29256F5BD500B834DA /* UIImage+SKImageHelper.m */; };
+		17705A30256F5D8800B834DA /* UIColor+SKColorHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 17705A2E256F5D8800B834DA /* UIColor+SKColorHelper.h */; };
+		17705A31256F5D8800B834DA /* UIColor+SKColorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 17705A2F256F5D8800B834DA /* UIColor+SKColorHelper.m */; };
 		2AD7BD859F095D4B99C39F3DC8F0BFB4 /* SKParseAudioData.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AE5D6BEC902641F1865C452087B51E /* SKParseAudioData.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2B9BF7943325657D9D51368FADC251E5 /* SKAudioFileStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 846774C5DD9F1BB34787165440CC41C8 /* SKAudioFileStream.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4231D16B30F1708990728442AAFF58E3 /* SKPixelBufferHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = DCEFCFD3F63EB100078E410D4D90D65E /* SKPixelBufferHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -33,13 +37,17 @@
 
 /* Begin PBXFileReference section */
 		0758DE4FB6E81DC3234E68470ACB81AB /* Pods-SKOpenGLUtilsLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SKOpenGLUtilsLib.debug.xcconfig"; sourceTree = "<group>"; };
-		196A6BB2694B90CE8F5B56D7B56D99D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		17705A28256F5BD500B834DA /* UIImage+SKImageHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+SKImageHelper.h"; sourceTree = "<group>"; };
+		17705A29256F5BD500B834DA /* UIImage+SKImageHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SKImageHelper.m"; sourceTree = "<group>"; };
+		17705A2E256F5D8800B834DA /* UIColor+SKColorHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+SKColorHelper.h"; sourceTree = "<group>"; };
+		17705A2F256F5D8800B834DA /* UIColor+SKColorHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SKColorHelper.m"; sourceTree = "<group>"; };
+		196A6BB2694B90CE8F5B56D7B56D99D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1D07B90EE00CB997A581031A34D8E721 /* Pods-SKOpenGLUtilsLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SKOpenGLUtilsLib.release.xcconfig"; sourceTree = "<group>"; };
 		1FCE65575D18DF246E15EC6A86B52403 /* SKAudioFileStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKAudioFileStream.h; sourceTree = "<group>"; };
 		38AE5D6BEC902641F1865C452087B51E /* SKParseAudioData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKParseAudioData.m; sourceTree = "<group>"; };
 		3AFEDFFF7FFF571E5BB2CACA46C7F51B /* Pods-SKOpenGLUtilsLib-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SKOpenGLUtilsLib-acknowledgements.plist"; sourceTree = "<group>"; };
 		423667398817541DAE9CE288376647F6 /* SKParseAudioData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKParseAudioData.h; sourceTree = "<group>"; };
-		456781ADB658D2942ED2441D9CEE7F63 /* libPods-SKOpenGLUtilsLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SKOpenGLUtilsLib.a"; path = "libPods-SKOpenGLUtilsLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		456781ADB658D2942ED2441D9CEE7F63 /* libPods-SKOpenGLUtilsLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SKOpenGLUtilsLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D96459A34AB3BD541C9A6212E15D14D /* SKPixelBufferHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKPixelBufferHelper.m; sourceTree = "<group>"; };
 		537D3F4755E46D6B71922279338B7A3E /* SKOpenGLUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SKOpenGLUtils-dummy.m"; sourceTree = "<group>"; };
 		5F16C4452F7EB3C3096A17A57BE9B495 /* Pods-SKOpenGLUtilsLib-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SKOpenGLUtilsLib-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -48,10 +56,10 @@
 		846774C5DD9F1BB34787165440CC41C8 /* SKAudioFileStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKAudioFileStream.m; sourceTree = "<group>"; };
 		8979D642BC49319D654C147356F490BD /* NSBundle+SKResource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSBundle+SKResource.h"; sourceTree = "<group>"; };
 		9117E6FA5B2D6C371F50E1215E233321 /* SKShaderHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKShaderHelper.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E7240388FD2DED9C4469E41CAFD9A7A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		B0D100000DFB7195FA2FE13E61EBF127 /* libSKOpenGLUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSKOpenGLUtils.a; path = libSKOpenGLUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5947CB41D0B89680AC0DE48FF8E9744 /* SKOpenGLUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SKOpenGLUtils.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E7240388FD2DED9C4469E41CAFD9A7A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B0D100000DFB7195FA2FE13E61EBF127 /* libSKOpenGLUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSKOpenGLUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5947CB41D0B89680AC0DE48FF8E9744 /* SKOpenGLUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SKOpenGLUtils.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B5DBBBC7DFEDA8F57CD7E57A7FED37D5 /* SKResource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SKResource.bundle; path = SKOpenGLUtils/Assets/SKResource.bundle; sourceTree = "<group>"; };
 		B61E5ACD7E10BADD2B3CC79407632DE9 /* SKShaderHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKShaderHelper.m; sourceTree = "<group>"; };
 		BA9E91E8AD711265EEBB3A298ED7C75B /* SKOpenGLUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SKOpenGLUtils.debug.xcconfig; sourceTree = "<group>"; };
@@ -126,6 +134,10 @@
 				4D96459A34AB3BD541C9A6212E15D14D /* SKPixelBufferHelper.m */,
 				9117E6FA5B2D6C371F50E1215E233321 /* SKShaderHelper.h */,
 				B61E5ACD7E10BADD2B3CC79407632DE9 /* SKShaderHelper.m */,
+				17705A28256F5BD500B834DA /* UIImage+SKImageHelper.h */,
+				17705A29256F5BD500B834DA /* UIImage+SKImageHelper.m */,
+				17705A2E256F5D8800B834DA /* UIColor+SKColorHelper.h */,
+				17705A2F256F5D8800B834DA /* UIColor+SKColorHelper.m */,
 			);
 			name = Utils;
 			path = SKOpenGLUtils/Classes/Utils;
@@ -231,7 +243,9 @@
 				AB780843810373590423F37FBA37B0DA /* NSBundle+SKResource.h in Headers */,
 				07852386493A84FCA75C6CA6F7F667D0 /* SKAudioFileStream.h in Headers */,
 				A0A6ABCE3A28A23B107B80D297CA9A60 /* SKParseAudioData.h in Headers */,
+				17705A30256F5D8800B834DA /* UIColor+SKColorHelper.h in Headers */,
 				4231D16B30F1708990728442AAFF58E3 /* SKPixelBufferHelper.h in Headers */,
+				17705A2A256F5BD500B834DA /* UIImage+SKImageHelper.h in Headers */,
 				B1827DAAA086E1F692FD6A050F424D1D /* SKShaderHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,12 +321,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17705A2B256F5BD500B834DA /* UIImage+SKImageHelper.m in Sources */,
 				946444BFAD00034A5A1E36F583813D98 /* NSBundle+SKResource.m in Sources */,
 				2B9BF7943325657D9D51368FADC251E5 /* SKAudioFileStream.m in Sources */,
 				F574DCF415B563268C209B8B1829FE57 /* SKOpenGLUtils-dummy.m in Sources */,
 				2AD7BD859F095D4B99C39F3DC8F0BFB4 /* SKParseAudioData.m in Sources */,
 				C508F39CEA2F576890B10675041E14E1 /* SKPixelBufferHelper.m in Sources */,
 				AA9710769EF6EFF14B21E8F4CD76BF10 /* SKShaderHelper.m in Sources */,
+				17705A31256F5D8800B834DA /* UIColor+SKColorHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

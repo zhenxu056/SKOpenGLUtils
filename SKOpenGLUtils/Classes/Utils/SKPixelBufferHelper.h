@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Unit
 
-/// Copy一份buff
+/// Copy一份 Buffer
 /// @param videoPixelBuffer RGB Buffer
 + (CVPixelBufferRef)copyPixelBufferWithBuffer:(CVPixelBufferRef)videoPixelBuffer;
 
@@ -43,6 +43,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// RGBA Buffer 生成 图片
 /// @param pixelBufferRef RGBA Buffer
 + (UIImage *)imageFromPixelBuffer:(CVPixelBufferRef)pixelBufferRef;
+
+/// 图片生成 RGBA Buffer
+/// @param image 图片
++ (CVPixelBufferRef)pixelBufferFromImage:(UIImage *)image;
 
 @end
 
