@@ -122,21 +122,6 @@
 
 #pragma mark - Public
 
-- (CVPixelBufferRef)createPixelBufferWithSize:(CGSize)size {
-    CVPixelBufferRef pixelBuffer;
-    NSDictionary *pixelBufferAttributes = @{(id)kCVPixelBufferIOSurfacePropertiesKey: @{}};
-    CVReturn status = CVPixelBufferCreate(nil,
-                                          size.width,
-                                          size.height,
-                                          kCVPixelFormatType_32BGRA,
-                                          (__bridge CFDictionaryRef _Nullable)(pixelBufferAttributes),
-                                          &pixelBuffer);
-    if (status != kCVReturnSuccess) {
-        NSLog(@"Can't create pixelbuffer");
-    }
-    return pixelBuffer;
-}
-
 - (GLuint)convertYUVPixelBufferToTexture:(CVPixelBufferRef)pixelBuffer {
     if (!pixelBuffer) {
         return 0;
@@ -294,7 +279,7 @@
                                     textureSize:(CGSize)textureSize {
     [EAGLContext setCurrentContext:self.context];
     
-    CVPixelBufferRef pixelBuffer = [self createPixelBufferWithSize:textureSize];
+    CVPixelBufferRef pixelBuffer = [SKPixelBufferHelper createPixelBufferWithSize:textureSize];
     GLuint targetTextureID = [self convertRGBPixelBufferToTexture:pixelBuffer];
     
     GLuint frameBuffer;
@@ -370,6 +355,87 @@
     glGenBuffers(1, &_VBO);
     glBindBuffer(GL_ARRAY_BUFFER, _VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+}
+
+
+#pragma mark - Unit
+
++ (CVPixelBufferRef)copyPixelBufferWithBuffer:(CVPixelBufferRef)videoPixelBuffer {
+    int bufferW = (int)CVPixelBufferGetWidth(videoPixelBuffer);
+    int bufferH = (int)CVPixelBufferGetHeight(videoPixelBuffer);
+    
+    CVPixelBufferRef pixelBufferCopy = NULL;
+    if (CVPixelBufferCreate(kCFAllocatorDefault, bufferW, bufferH, kCVPixelFormatType_32BGRA, NULL, &pixelBufferCopy) == kCVReturnSuccess) {
+        
+        CVPixelBufferLockBaseAddress(videoPixelBuffer, 0);
+        CVPixelBufferLockBaseAddress(pixelBufferCopy, 0);
+
+        uint8_t *baseAddress = CVPixelBufferGetBaseAddress(videoPixelBuffer);
+        uint8_t *copyBaseAddress = CVPixelBufferGetBaseAddress(pixelBufferCopy);
+        memcpy(copyBaseAddress, baseAddress, bufferH * CVPixelBufferGetBytesPerRow(videoPixelBuffer));
+ 
+        CVPixelBufferUnlockBaseAddress(videoPixelBuffer, 0);
+        CVPixelBufferUnlockBaseAddress(pixelBufferCopy, 0);
+ 
+    }
+    return pixelBufferCopy;
+}
+
++ (CVPixelBufferRef)createPixelBufferWithSize:(CGSize)size {
+    CVPixelBufferRef pixelBuffer;
+    NSDictionary *pixelBufferAttributes = @{(id)kCVPixelBufferIOSurfacePropertiesKey: @{}};
+    CVReturn status = CVPixelBufferCreate(nil,
+                                          size.width,
+                                          size.height,
+                                          kCVPixelFormatType_32BGRA,
+                                          (__bridge CFDictionaryRef _Nullable)(pixelBufferAttributes),
+                                          &pixelBuffer);
+    if (status != kCVReturnSuccess) {
+        NSLog(@"Can't create pixelbuffer");
+    }
+    return pixelBuffer;
+}
+
++ (UIImage *)imageFromPixelBuffer:(CVPixelBufferRef)pixelBufferRef {
+    
+    CVPixelBufferLockBaseAddress(pixelBufferRef, 0);
+    
+    CGFloat SW = [UIScreen mainScreen].bounds.size.width;
+    CGFloat SH = [UIScreen mainScreen].bounds.size.height;
+    
+    float width = CVPixelBufferGetWidth(pixelBufferRef);
+    float height = CVPixelBufferGetHeight(pixelBufferRef);
+    
+    float dw = width / SW;
+    float dh = height / SH;
+
+    float cropW = width;
+    float cropH = height;
+
+    if (dw > dh) {
+        cropW = SW * dh;
+    }else
+    {
+        cropH = SH * dw;
+    }
+
+    CGFloat cropX = (width - cropW) * 0.5;
+    CGFloat cropY = (height - cropH) * 0.5;
+
+    CIImage *ciImage = [CIImage imageWithCVPixelBuffer:pixelBufferRef];
+    
+    CIContext *temporaryContext = [CIContext contextWithOptions:nil];
+    CGImageRef videoImage = [temporaryContext
+                             createCGImage:ciImage
+                             fromRect:CGRectMake(cropX, cropY,
+                                                 cropW,
+                                                 cropH)];
+    
+    UIImage *image = [UIImage imageWithCGImage:videoImage];
+    CGImageRelease(videoImage);
+    CVPixelBufferUnlockBaseAddress(pixelBufferRef, 0);
+    
+    return image;
 }
 
 @end
