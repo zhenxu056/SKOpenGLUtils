@@ -13,9 +13,9 @@
  
 - (UIColor *)getPixelColorScreenWindowAtLocation:(CGPoint)point {
     UIColor* color = nil;
-    UIImage *image = [self fullScreenshots];
+    UIImage *image = [UIImage fullScreenshots];
     CGImageRef inImage = image.CGImage;
-    CGContextRef cgctx = [self createARGBBitmapContextFromImage:inImage];
+    CGContextRef cgctx = [image createARGBBitmapContextFromImage];
     if (cgctx == NULL) { return nil;  }
     size_t w = CGImageGetWidth(inImage);
     size_t h = CGImageGetHeight(inImage);

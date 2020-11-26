@@ -9,7 +9,7 @@
 
 @implementation UIImage (SKImageHelper)
 
-+ (unsigned char *)getRGBAWithImage
+- (unsigned char *)getRGBAWithImage
 {
     int RGBA = 4;
     
@@ -54,7 +54,7 @@
     return image;
 }
 
-- (UIImage *)fullScreenshots {
++ (UIImage *)fullScreenshots {
     CGSize imageSize = CGSizeZero;
 
     UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
