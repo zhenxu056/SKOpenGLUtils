@@ -33,7 +33,7 @@
 - (instancetype)init {
     if(self = [super init]) {
         NSLog(@"SKMicrophoneSource init: %p", self);
-        self.taskQueue = dispatch_queue_create("com.qiniu.qrd.audiocapture", NULL);
+        self.taskQueue = dispatch_queue_create("com.audiocapture", NULL);
         self.channelCount = 2;
         self.sampleRate = 44100;
         self.allowAudioMixWithOthers = NO;
