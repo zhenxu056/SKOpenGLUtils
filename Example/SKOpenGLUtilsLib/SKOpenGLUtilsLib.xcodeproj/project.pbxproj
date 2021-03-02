@@ -21,6 +21,8 @@
 		1729C17A2457FF2D006990F7 /* SKShaderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729C1742457FF2D006990F7 /* SKShaderHelper.m */; };
 		1729C17B2457FF2D006990F7 /* SKPixelBufferHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1729C1752457FF2D006990F7 /* SKPixelBufferHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1729C17D2457FF45006990F7 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 1729C17C2457FF44006990F7 /* Assets */; };
+		172F45FB25ECC70300A01FE1 /* MGTEDMovieWrite.m in Sources */ = {isa = PBXBuildFile; fileRef = 172F45FA25ECC70300A01FE1 /* MGTEDMovieWrite.m */; };
+		172F460025ECC9D500A01FE1 /* MGTEDFileManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 172F45FE25ECC9D500A01FE1 /* MGTEDFileManage.m */; };
 		1788896624F797330014BC05 /* 47061.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1788896524F797330014BC05 /* 47061.mp3 */; };
 		2E739CC8078502CD094DD248 /* libPods-SKOpenGLUtilsLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04285F690D5EF7E6FA5A860C /* libPods-SKOpenGLUtilsLib.a */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,10 @@
 		1729C1742457FF2D006990F7 /* SKShaderHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKShaderHelper.m; sourceTree = "<group>"; };
 		1729C1752457FF2D006990F7 /* SKPixelBufferHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPixelBufferHelper.h; sourceTree = "<group>"; };
 		1729C17C2457FF44006990F7 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = ../../../SKOpenGLUtils/Assets; sourceTree = "<group>"; };
+		172F45F925ECC70300A01FE1 /* MGTEDMovieWrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTEDMovieWrite.h; sourceTree = "<group>"; };
+		172F45FA25ECC70300A01FE1 /* MGTEDMovieWrite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTEDMovieWrite.m; sourceTree = "<group>"; };
+		172F45FE25ECC9D500A01FE1 /* MGTEDFileManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTEDFileManage.m; sourceTree = "<group>"; };
+		172F45FF25ECC9D500A01FE1 /* MGTEDFileManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTEDFileManage.h; sourceTree = "<group>"; };
 		1788896524F797330014BC05 /* 47061.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 47061.mp3; sourceTree = "<group>"; };
 		5FDC2716756ADC414579CD6E /* Pods-SKOpenGLUtilsLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKOpenGLUtilsLib.release.xcconfig"; path = "Target Support Files/Pods-SKOpenGLUtilsLib/Pods-SKOpenGLUtilsLib.release.xcconfig"; sourceTree = "<group>"; };
 		73B7D0DA835DF0A6EFE7771D /* Pods-SKOpenGLUtilsLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKOpenGLUtilsLib.debug.xcconfig"; path = "Target Support Files/Pods-SKOpenGLUtilsLib/Pods-SKOpenGLUtilsLib.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +101,7 @@
 		171F61852457D67B001C6683 /* SKOpenGLUtilsLib */ = {
 			isa = PBXGroup;
 			children = (
+				172F45ED25ECC3F400A01FE1 /* 文件管理 */,
 				1788896524F797330014BC05 /* 47061.mp3 */,
 				171F61862457D67B001C6683 /* AppDelegate.h */,
 				171F61872457D67B001C6683 /* AppDelegate.m */,
@@ -149,6 +156,17 @@
 				1729C1752457FF2D006990F7 /* SKPixelBufferHelper.h */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		172F45ED25ECC3F400A01FE1 /* 文件管理 */ = {
+			isa = PBXGroup;
+			children = (
+				172F45FF25ECC9D500A01FE1 /* MGTEDFileManage.h */,
+				172F45FE25ECC9D500A01FE1 /* MGTEDFileManage.m */,
+				172F45F925ECC70300A01FE1 /* MGTEDMovieWrite.h */,
+				172F45FA25ECC70300A01FE1 /* MGTEDMovieWrite.m */,
+			);
+			path = "文件管理";
 			sourceTree = "<group>";
 		};
 		A10AC0C7A43E06520FB89F5F /* Pods */ = {
@@ -327,6 +345,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				171F618E2457D67B001C6683 /* ViewController.m in Sources */,
+				172F460025ECC9D500A01FE1 /* MGTEDFileManage.m in Sources */,
+				172F45FB25ECC70300A01FE1 /* MGTEDMovieWrite.m in Sources */,
 				171F61882457D67B001C6683 /* AppDelegate.m in Sources */,
 				171F61992457D67F001C6683 /* main.m in Sources */,
 				171F618B2457D67B001C6683 /* SceneDelegate.m in Sources */,

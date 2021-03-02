@@ -7,12 +7,16 @@
 //
 
 #import "ViewController.h"
+ 
+#import "SKMicrophoneSource.h"
+#import "MGTEDMovieWrite.h"
+#import "MGTEDFileManage.h"
 
-#import "SKAudioFileStream.h"
+@interface ViewController ()<SKMicrophoneSourceDelegate, MGTEDMovieWriteDelegate>
 
-@interface ViewController ()<SKAudioFileStreamDelegate>
+@property (nonatomic, strong) SKMicrophoneSource *microphone;
 
-@property (nonatomic, strong) SKAudioFileStream *audioFileStream;
+@property (nonatomic, strong) MGTEDMovieWrite *movieWrite;
 
 @end
 
@@ -21,51 +25,69 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"47061" ofType:@"mp3"];
-    NSFileHandle *file = [NSFileHandle fileHandleForReadingAtPath:path];
-    unsigned long long fileSize = [[[NSFileManager defaultManager] attributesOfItemAtPath:path error:nil] fileSize];
-    NSError *error = nil;
-    _audioFileStream = [[SKAudioFileStream alloc]initWithFileType:kAudioFileFLACType fileSize:fileSize error:&error];
-    _audioFileStream.delegate = self;
+    [self.microphone prepareToMicrophone];
     
-    if (error) {
-        _audioFileStream = nil;
-        NSLog(@"create file stream failed ,error : %@",[error description]);
-    }else{
-        NSLog(@"audio file open");
-        if (file) {
-            NSUInteger lengthPerRead = 1024;
-            while (fileSize > 0) {
-                NSData *data = [file readDataOfLength:lengthPerRead];
-                fileSize -= [data length];
-                [_audioFileStream parseData:data error:&error];
-                if (error) {
-                    if (error.code == kAudioFileStreamError_NotOptimized) {
-                        NSLog(@"audio not  optimized");
-                    }
-                    break;
-                }
-            }
-            
-            NSLog(@"audio format: bitrate = %u, duration = %lf.",(unsigned int)_audioFileStream.bitRate,_audioFileStream.duration);
-            [_audioFileStream close];
-            _audioFileStream = nil;
-            NSLog(@"xxxxxxxxx_________xxxxxxxxxx");
-            [file closeFile];
-        }
+}
+
+- (IBAction)startGetAudio:(UIButton *)sender {
+    [self.microphone startRunning];
+}
+
+- (IBAction)startRecord:(UIButton *)sender { 
+    NSString *path = [[MGTEDFileManage documentsDir] stringByAppendingString:@"/audio.mp4"];
+    [MGTEDFileManage removeItemAtPath:path];
+    self.movieWrite = [[MGTEDMovieWrite alloc] initWithURL:[NSURL fileURLWithPath:path] delegate:self callbackQueue:dispatch_get_main_queue()];
+    [self.movieWrite prepareToRecord];
+}
+
+- (IBAction)closeRecord:(UIButton *)sender {
+    [self.microphone stopRunning];
+    [self.movieWrite finishRecording];
+}
+
+#pragma mark - QRDMicrophoneSourceDelegate
+
+- (void)microphoneSource:(SKMicrophoneSource *)source didGetAudioBuffer:(AudioBufferList)bufList {
+    
+    if (self.movieWrite) {
+        NSTimeInterval now = [[NSDate date] timeIntervalSince1970];
+        CMTime time = CMTimeMake(now, 1000);
+        [self.movieWrite appendAudioBufferList:bufList withPresentationTime:time];
     }
+     
+}
+
+#pragma mark -
+
+/// 准备编码完成
+/// @param recorder 编码对象
+- (void)movieRecorderDidFinishPreparing:(MGTEDMovieWrite *)recorder {
     
 }
 
-- (void)audioFileStreamReadyToProducePackets:(SKAudioFileStream *)audioFileStream
-{
-    NSLog(@"audio ready to produce packets");
+/// 编码错误
+/// @param recorder 编码对象
+/// @param error 错误信息
+- (void)movieRecorder:(MGTEDMovieWrite *)recorder didFailWithError:(NSError *)error {
+    
 }
 
-- (void)audioFileStream:(SKAudioFileStream *)audioFileStream audioDataParsed:(NSArray *)audioData
-{
-    NSLog(@"data parse");
+/// 编码完成
+/// @param recorder 编码对象
+- (void)movieRecorderDidFinishRecording:(MGTEDMovieWrite *)recorder {
+    
 }
 
+#pragma mark - SET && GET
+
+- (SKMicrophoneSource *)microphone {
+    if (!_microphone) {
+        _microphone = [[SKMicrophoneSource alloc] init];
+        [_microphone setChannelCount:2];
+        [_microphone setSampleRate:44100];
+        _microphone.delegate = self;
+    }
+    return _microphone;
+}
 
 @end
