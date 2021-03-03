@@ -12,6 +12,9 @@
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
 
+#define kInputBus   1//输入道
+#define KOutputBus  0//输出道
+
 @interface SKMicrophoneSource ()
 
 @property (nonatomic, assign) AudioComponentInstance componentInstance;
@@ -100,13 +103,29 @@
     }
 
     UInt32 flagOne = 1;
-    AudioUnitSetProperty(self.componentInstance, kAudioOutputUnitProperty_EnableIO, kAudioUnitScope_Input, 1, &flagOne, sizeof(flagOne));
+    // Enable IO for recording
+    AudioUnitSetProperty(self.componentInstance, kAudioOutputUnitProperty_EnableIO, kAudioUnitScope_Input, kInputBus, &flagOne, sizeof(flagOne));
 
-    AURenderCallbackStruct cb;
-    cb.inputProcRefCon = (__bridge void *)(self);
-    cb.inputProc = handleInputBuffer;
-    AudioUnitSetProperty(self.componentInstance, kAudioUnitProperty_StreamFormat, kAudioUnitScope_Output, 1, &_asbd, sizeof(_asbd));
-    AudioUnitSetProperty(self.componentInstance, kAudioOutputUnitProperty_SetInputCallback, kAudioUnitScope_Global, 1, &cb, sizeof(cb));
+    // 应用录制音频流描述
+    AudioUnitSetProperty(self.componentInstance, kAudioUnitProperty_StreamFormat, kAudioUnitScope_Output, kInputBus, &_asbd, sizeof(_asbd));
+    
+    // Set input callback
+    AURenderCallbackStruct callback;
+    callback.inputProcRefCon = (__bridge void *)(self);
+    callback.inputProc = handleInputBuffer;
+    AudioUnitSetProperty(self.componentInstance, kAudioOutputUnitProperty_SetInputCallback, kAudioUnitScope_Global, kInputBus, &callback, sizeof(callback));
+    
+    
+    // Enable IO for playback
+    AudioUnitSetProperty(self.componentInstance, kAudioOutputUnitProperty_EnableIO, kAudioUnitScope_Output, KOutputBus, &flagOne, sizeof(flagOne));
+    
+    // 音频流描述
+    AudioUnitSetProperty(self.componentInstance, kAudioUnitProperty_StreamFormat, kAudioUnitScope_Input, KOutputBus, &_asbd, sizeof(_asbd));
+    
+    // Set output callback
+    callback.inputProc = playbackCallback;
+    callback.inputProcRefCon = (__bridge void *)self;
+    status = AudioUnitSetProperty(self.componentInstance, kAudioUnitProperty_SetRenderCallback, kAudioUnitScope_Global, KOutputBus, &callback, sizeof(callback));
 
     status = AudioUnitInitialize(self.componentInstance);
     if (noErr != status) {
@@ -383,6 +402,39 @@ static OSStatus handleInputBuffer(void *inRefCon,
         free(buffer.mData);
         return status;
     }
+}
+
+
+static OSStatus playbackCallback(void *inRefCon,
+                                 AudioUnitRenderActionFlags *ioActionFlags,
+                                 const AudioTimeStamp *inTimeStamp,
+                                 UInt32 inBusNumber,
+                                 UInt32 inNumberFrames,
+                                 AudioBufferList *ioData) {
+    
+    @autoreleasepool {
+        
+        SKMicrophoneSource* source = (__bridge SKMicrophoneSource *) inRefCon;
+
+        if (!source || !source.isRunning) {
+            for (UInt32 i = 0; i < ioData->mNumberBuffers; i++) {
+                AudioBuffer *ioBuffer = &ioData->mBuffers[i];
+                memset(ioBuffer->mData, 0x00, ioBuffer->mDataByteSize);
+            }
+            return noErr;
+        }
+
+        for (int i = 0; i < (int)ioData->mNumberBuffers; i++) {
+            AudioBuffer *ioBuffer = &ioData->mBuffers[i];
+            memset(ioBuffer->mData, 0x00, ioBuffer->mDataByteSize);
+            if (source.delegate && [source.delegate respondsToSelector:@selector(queryAudioDataSource:audioBuffer:audioSize:)]) {
+                [source.delegate queryAudioDataSource:source audioBuffer:ioBuffer->mData audioSize:ioBuffer->mDataByteSize];
+            }
+        }
+
+        return noErr;
+    }
+    return noErr;
 }
 
 @end

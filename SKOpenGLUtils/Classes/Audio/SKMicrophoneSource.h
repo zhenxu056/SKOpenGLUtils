@@ -16,7 +16,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol SKMicrophoneSourceDelegate <NSObject>
 
+/// 声音数据采集
+/// @param source 对象
+/// @param bufList 音频buffer
 - (void)microphoneSource:(SKMicrophoneSource *)source didGetAudioBuffer:(AudioBufferList)bufList;
+
+/// 声音播放
+/// @param source 对象
+/// @param buffer 填充音频buffer
+/// @param lenth 音频长度
+- (void)queryAudioDataSource:(SKMicrophoneSource *)source audioBuffer:(uint8_t*)buffer audioSize:(int)lenth;
 
 @end
 
