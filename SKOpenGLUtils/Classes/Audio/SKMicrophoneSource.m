@@ -431,6 +431,15 @@ static OSStatus playbackCallback(void *inRefCon,
                 [source.delegate queryAudioDataSource:source audioBuffer:ioBuffer->mData audioSize:ioBuffer->mDataByteSize];
             }
         }
+        
+        /*----------------------------------------------------------------------
+         |   1.根据buffer.mDataByteSize大小需求，给buffer.mData赋值相应大小的数据内容; |
+         |   2.若无数据，则把数据填写为0，默认正在播放无声音频；                         |
+         |       UInt16 *frameBuffer = buffer.mData;                            |
+         |       for (int j = 0; j < inNumberFrames; j++) {                     |
+         |           frameBuffer[j] = 0;                                        |
+         |       }                                                              |
+         ----------------------------------------------------------------------*/
 
         return noErr;
     }
