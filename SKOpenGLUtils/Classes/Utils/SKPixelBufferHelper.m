@@ -277,9 +277,22 @@
 
 - (CVPixelBufferRef)convertTextureToPixelBuffer:(GLuint)texture
                                     textureSize:(CGSize)textureSize {
+    return [self convertTextureToPixelBuffer:texture
+                                 textureSize:textureSize
+                                 pixelBuffer:[SKPixelBufferHelper createPixelBufferWithSize:textureSize]];
+}
+
+- (CVPixelBufferRef)convertTextureToPixelBuffer:(GLuint)texture
+                                    textureSize:(CGSize)textureSize
+                                    pixelBuffer:(CVPixelBufferRef)pixelBuffer {
     [EAGLContext setCurrentContext:self.context];
+
+    OSType type = CVPixelBufferGetPixelFormatType(pixelBuffer);
+    if (type != kCVPixelFormatType_32BGRA) {
+        NSLog(@"Not RGBA Buffer");
+        return pixelBuffer;
+    }
     
-    CVPixelBufferRef pixelBuffer = [SKPixelBufferHelper createPixelBufferWithSize:textureSize];
     GLuint targetTextureID = [self convertRGBPixelBufferToTexture:pixelBuffer];
     
     GLuint frameBuffer;

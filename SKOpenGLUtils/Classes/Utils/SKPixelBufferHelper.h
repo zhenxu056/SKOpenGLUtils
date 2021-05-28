@@ -2,7 +2,7 @@
 //  SKPixelBufferHelper.h
 //
 //
-//  Created by Sunflower 
+//  Created by Sunflower
 //
 
 #import <AVFoundation/AVFoundation.h>
@@ -29,6 +29,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param textureSize 纹理大小
 - (CVPixelBufferRef)convertTextureToPixelBuffer:(GLuint)texture
                                     textureSize:(CGSize)textureSize;
+
+/// 纹理转化为 RGB 格式的 pixelBuffer
+/// @param texture 纹理
+/// @param textureSize  纹理大小
+/// @param pixelBuffer 渲染的buffer
+- (CVPixelBufferRef)convertTextureToPixelBuffer:(GLuint)texture
+                                    textureSize:(CGSize)textureSize
+                                    pixelBuffer:(CVPixelBufferRef)pixelBuffer;
 
 #pragma mark - Unit
 
