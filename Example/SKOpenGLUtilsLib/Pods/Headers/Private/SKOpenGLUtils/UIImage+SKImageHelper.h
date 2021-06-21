@@ -1,1 +1,1 @@
-../../../../../../SKOpenGLUtils/Classes/Utils/UIImage+SKImageHelper.h
+../../../../../../SKOpenGLUtils/Classes/PixelBufferUtils/UIImage+SKImageHelper.h

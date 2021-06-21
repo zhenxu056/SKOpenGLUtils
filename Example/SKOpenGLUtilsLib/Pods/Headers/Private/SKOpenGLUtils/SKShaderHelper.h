@@ -1,1 +1,1 @@
-../../../../../../SKOpenGLUtils/Classes/Utils/SKShaderHelper.h
+../../../../../../SKOpenGLUtils/Classes/PixelBufferUtils/SKShaderHelper.h
