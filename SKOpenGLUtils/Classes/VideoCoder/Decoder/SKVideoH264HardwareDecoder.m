@@ -8,7 +8,7 @@
 
 #import "SKVideoH264HardwareDecoder.h"
 #import "SKLogManager.h"
-#import "DVVideoPacket.h"
+#import "SKVideoPacket.h"
 
 @interface SKVideoH264HardwareDecoder () {
     VTDecompressionSessionRef _sessionRef;

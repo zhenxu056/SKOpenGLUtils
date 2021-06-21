@@ -6,9 +6,9 @@
 //  Copyright © 2019 . All rights reserved.
 //
 
-#import "DVVideoPacket.h"
+#import "SKVideoPacket.h"
 
-@implementation DVVideoPacket
+@implementation SKVideoPacket
 
 - (instancetype)initWithData:(uint8_t *)mData size:(UInt32)mSize {
     self = [super init];

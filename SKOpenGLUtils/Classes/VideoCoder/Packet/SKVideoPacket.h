@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DVVideoPacket : NSObject 
+@interface SKVideoPacket : NSObject 
 
 @property(nonatomic, weak, readonly) NSData *data;
 

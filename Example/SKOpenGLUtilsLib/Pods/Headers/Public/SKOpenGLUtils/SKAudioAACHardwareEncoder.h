@@ -1,0 +1,1 @@
+../../../../../../SKOpenGLUtils/Classes/AudioTool/AudioCoder/Encoder/SKAudioAACHardwareEncoder.h
