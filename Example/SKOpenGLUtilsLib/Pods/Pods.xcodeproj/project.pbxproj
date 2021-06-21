@@ -7,35 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B3E8EABA90A6C4EF19BB2F1E9A3D276 /* UIColor+SKColorHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 64B384BBCDFB6D58DA137D9DA1B613CA /* UIColor+SKColorHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		10790D68FB63B2B341436729A94EDA56 /* SKAudioFileStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F03146504F3C994D94B05ADC5FAE17 /* SKAudioFileStream.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1B86F6D20A84E6F93EE1AEE020042D8F /* SKPixelBufferHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D9246ADA9775BBF2D22FFE37C8373401 /* SKPixelBufferHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		24B37430983F257634007F4D6BCED502 /* SKShaderFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 5095E1CF97B7E290C263335643C52098 /* SKShaderFile.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		25EA27761945A7934A83FDEA6361A0C4 /* SKRenderTextureView.h in Headers */ = {isa = PBXBuildFile; fileRef = F13F8E49EAB2D93A6A5B817C2EAC8FBE /* SKRenderTextureView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		38DCE5B915A9FC9FE607B27293352AD0 /* SKBezierCurvesTool.h in Headers */ = {isa = PBXBuildFile; fileRef = DBCB6F2387F4CC5CE34944091CFD08A6 /* SKBezierCurvesTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		031F082412F460C14B3B562352CDECBB /* SKMicrophoneSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3501A03E7FD70A3B77DB4A45CC779E19 /* SKMicrophoneSource.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		071C9E59FDFC2281C19F752809EE53CE /* SKVideoHEVCHardwareDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAAB1ED9F28E97E7CAB79E34D13E551 /* SKVideoHEVCHardwareDecoder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		08F355D07AA1FE0EFDDDFFEB3D158AD7 /* SKPixelBufferHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A6061629CCC33A8413EF1527BA129ED6 /* SKPixelBufferHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0CB0BE5C4797772DBB4900B0447621B7 /* DVVideoPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 37E681257C1044D5CC6CC75B8713D016 /* DVVideoPacket.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0CCCAFF5D2809A13871F6F07EB06BAC9 /* SKVideoH264HardwareEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = D01D081CD25254F25F27F6093F4BE2D9 /* SKVideoH264HardwareEncoder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0D0DA400745813BEA4F9F35EFD05109F /* SKRenderTextureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6750AA1B0A4D8B40F7F237D3E987D7 /* SKRenderTextureView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1187848160D99C9229B8B253B5D80A60 /* SKVideoEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 08BD19FB7773A8A53D4E45858A7C5471 /* SKVideoEncoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1C0B350C59C6E52E600331AEBAFA72F6 /* UIColor+SKColorHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA937C3B354E5430B26D8A07BDFE537B /* UIColor+SKColorHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2BDA8B77ADC18B4FE9F70E70EEB9DCEA /* SKVideoConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 58B0B400EED11CF4225DACCDEBE13623 /* SKVideoConfig.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2DFC116CEF582789DC5EEB0439151FD9 /* UIImage+SKImageHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1675B3176DD155385A44EFB9262CE69B /* UIImage+SKImageHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2EB33E91325B0763496F14FB966940DA /* SKVideoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F073EC883E32333DC6D10EF10887FC /* SKVideoConfig.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		334F12E30769FE3A43F60040ADF1DEDE /* SKVideoHEVCHardwareEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = DC2DA67CB9E7856C0C1D3120DC943FC0 /* SKVideoHEVCHardwareEncoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3D61DDFEE422ABAFE1905B7DA2FE767D /* Pods-SKOpenGLUtilsLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C96AA7271982A5A38CC5B016F7A25285 /* Pods-SKOpenGLUtilsLib-dummy.m */; };
-		4DCD84F05DD5D3E647381DE01386300D /* UIImage+SKImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 41FFF39061198A7566AB65FDA4EAA2C4 /* UIImage+SKImageHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		4E970CFFCCA58BC8372A02D98B01F0C6 /* NSBundle+SKResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 620254C785088FD9DD86CCE4B65CF270 /* NSBundle+SKResource.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5C08CFFF0D3C1A6AA22109CBE8730962 /* SKPixelBufferRefDisplayView.h in Headers */ = {isa = PBXBuildFile; fileRef = A2B435F23A00C5E7D4F827F71D64C9BD /* SKPixelBufferRefDisplayView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5D3E74BD83447828FFC697A0D40C00CE /* SKPixelBufferHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = A78CEABB9C2631282141C7817B5A2CB5 /* SKPixelBufferHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		748FE0FE434234B383458A46DF1832BD /* SKRenderTextureView.m in Sources */ = {isa = PBXBuildFile; fileRef = B715FBA6BA091D95622769F989FA9279 /* SKRenderTextureView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		772480B86144AB4546724CA6DDA2B0FB /* UIColor+SKColorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BA37A1FFF4B7F2A0FB68FCCCE64B547F /* UIColor+SKColorHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		7C2450BE193C520619F35066FA57CB85 /* SKMicrophoneSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 6149C748D0AD7F872BA63606FB580EDA /* SKMicrophoneSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8F07756CB12D4AB9612B0E37F09BF5EF /* SKMicrophoneSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A8F12B9248E34E340DF3221E739571 /* SKMicrophoneSource.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		BE9EA602A6DDFFAF608DAE17E7066C1B /* SKShaderHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AE176A8B8F05174F28C43BC328A57F1 /* SKShaderHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BF136B7B83D071119E45219962F2A891 /* UIImage+SKImageHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B63F0CFC3E0478A1A5D45C1E5D90C3 /* UIImage+SKImageHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DB3C5F03CFFC6807616B6BFBB8A7C0BB /* SKShaderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BD30EEB307390A782790CA478283780A /* SKShaderHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		DEF7B68BF83787B02BFB2793DFE6AC47 /* SKParseAudioData.h in Headers */ = {isa = PBXBuildFile; fileRef = A9C9407E380F7487FE584521DA1943DE /* SKParseAudioData.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E13996FE3ACDC809EE049858397C780B /* SKBezierCurvesTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B8BD9289452F95D0C0D26D1D250FDB9E /* SKBezierCurvesTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		E624916811DB1E601CC1B3AA03B54200 /* SKPixelBufferRefDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64225108CB82CE797542FCF0A00632DA /* SKPixelBufferRefDisplayView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		EBE9A49E0602686D1B74590D4050A58B /* SKOpenGLUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BA2EAB4C7E2B7C97F98465A316EF77 /* SKOpenGLUtils-dummy.m */; };
-		F312AB47648B8B1E92FCE121E06FB4C7 /* NSBundle+SKResource.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD8A2698E50CBCF2FD7C23C1E66334E /* NSBundle+SKResource.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		FB7454AFC2622F0889984167C20A2F71 /* SKAudioFileStream.h in Headers */ = {isa = PBXBuildFile; fileRef = B9BCB75FD85DCEDE9BF2844EA9F725A7 /* SKAudioFileStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FC504C2104C54203B4501F0CB31D1CFB /* SKParseAudioData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C45408C1C928017639CFC1818195827 /* SKParseAudioData.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		593CDD4589038FE07DC393653885B874 /* SKPixelBufferHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C46D9FABCF3E1B6251530327C1813607 /* SKPixelBufferHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5F1D3840CC3EB154A6530F62F8AF628C /* SKShaderFile.h in Headers */ = {isa = PBXBuildFile; fileRef = AE5C803F06A2EF9A237300DD4DBCF86C /* SKShaderFile.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6B303C887D5C92A433B0475321A1E882 /* SKShaderHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = D71EAE390D1760B7C50C42731547583F /* SKShaderHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6D742CA75C880E87F3608508CE486486 /* SKVideoUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F2ABD0C889F393D3BCE418D1938349 /* SKVideoUtils.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		72519FB713474AA278B58FC44C03FCCE /* SKVideoDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C387E54F791D75AA06C8424A96A6BE72 /* SKVideoDecoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		77A442BEA32070EFECC95307B93F0A3A /* SKAudioFileStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 22419E3F31990F40EF523A8145928D49 /* SKAudioFileStream.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		79A72CD8BD5C725586EFFFC6563A4970 /* SKVideoH264HardwareDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 97E318404E366EB8D2F20664CB882352 /* SKVideoH264HardwareDecoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7E1392A7F94588BE6DB5288E76AB1CA2 /* SKVideoUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 96FAC2A00DD3C8E62D40052C19F3C215 /* SKVideoUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8B9056670D25249EB9AC045E883EEED0 /* NSBundle+SKResource.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA0A0FA89AC2DC1D876040105F961B2 /* NSBundle+SKResource.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9067B0B5A120D9AEC3C5B8B8282F34C8 /* SKVideoHEVCHardwareDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C6DD7E4C9B7EFC19E4CD670D2BEDC7A /* SKVideoHEVCHardwareDecoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		96341CF2DAFCA44953FC776C9DE61276 /* SKLogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2873E2ACD8022F98385ECDD049262617 /* SKLogManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		965CB92C54B9C171EF4B824367E36914 /* SKMicrophoneSource.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B293CA896BB028D59E9718BF6FA35D /* SKMicrophoneSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		96895792E8F0852A722F5700E7B5F67B /* SKLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE9DDB88AA9D889E89143B229C40355 /* SKLogManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A1590ECA2DDB0943B4C8104FBC6FC99A /* SKPixelBufferRefDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 839842B4DA0A1F8F5796CFCAE7BBE5FA /* SKPixelBufferRefDisplayView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A197482915882AA93A2EC5B2D72930DC /* SKParseAudioData.h in Headers */ = {isa = PBXBuildFile; fileRef = ECB5E8382DEF707303B663626CE4434E /* SKParseAudioData.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A4A0664DA16E3FCBD9D4AF98C31AC9D4 /* SKPixelBufferRefDisplayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A17337664E71C260EC727068D02BFA4 /* SKPixelBufferRefDisplayView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A946A2AF931A8F2A3258291685DF51C6 /* SKBezierCurvesTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 09FDEB9A9B51174D78DEAFCAB92826A5 /* SKBezierCurvesTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B178538FBD895C5BEF38133A2EEB6A3E /* UIColor+SKColorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FD3DA7CEB5E3C3A28B267F05649C45 /* UIColor+SKColorHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B192B009FC37FCABC8810F033E354129 /* SKBezierCurvesTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC2D5944F2FC1773510C05EDA2619C /* SKBezierCurvesTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B1CDE052CBCAA860685DF432E4E3FE9B /* SKVideoH264HardwareDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A11330E0CAFA94068FBEC0940778B0 /* SKVideoH264HardwareDecoder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C21AA6E86E57AD25A8DB4C5D2D625D30 /* SKAudioFileStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E2378C764E1BCF2BE1267F3950FE6FB /* SKAudioFileStream.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CE83198897A1D14000B8D0911C309D04 /* SKVideoHEVCHardwareEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = D780A03C2EE1A96030DD3F106454C7E3 /* SKVideoHEVCHardwareEncoder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D040A93F77C886EB697F236F7998027D /* DVVideoPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8902920B598B0E37165CE4D1911AAB53 /* DVVideoPacket.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D438219C3849CFA72DC8E7DC90A706C5 /* NSBundle+SKResource.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D6D51D40497604698819B056B725B0 /* NSBundle+SKResource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DFA56FED75525DE0D89922211E620648 /* SKParseAudioData.m in Sources */ = {isa = PBXBuildFile; fileRef = CF35E41A982121CEC4C88875C255BA4C /* SKParseAudioData.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E1F994FA6FF56049F94F04BF8FA085EA /* SKVideoH264HardwareEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = E4AFD89A7F55A623D663055F16EF62A7 /* SKVideoH264HardwareEncoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E83328FE9EFDAE0628F70C4BB10982D8 /* SKRenderTextureView.h in Headers */ = {isa = PBXBuildFile; fileRef = 300D0429611C2B160904B51BA85CBA61 /* SKRenderTextureView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EB04971789FE22EC22194F45CE12A0B4 /* SKShaderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7653EDDFAD957D2E78B8E5347C8DC49A /* SKShaderHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EDD46C458CFC66BC5BED8192E7D6E18C /* SKOpenGLUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE30EBDF3776281F397EFD1497A749DD /* SKOpenGLUtils-dummy.m */; };
+		F7FCB69D7A174C3958C3CE208B40644A /* UIImage+SKImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDDBDF3DC99D2B23462A3A4C0C92DAA /* UIImage+SKImageHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B7D65F10A9C6290CAEF5DE5952EA9CCA /* PBXContainerItemProxy */ = {
+		EF76FC52CD451E093B9FDC644D222AF8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -46,49 +64,67 @@
 
 /* Begin PBXFileReference section */
 		0758DE4FB6E81DC3234E68470ACB81AB /* Pods-SKOpenGLUtilsLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SKOpenGLUtilsLib.debug.xcconfig"; sourceTree = "<group>"; };
-		08F03146504F3C994D94B05ADC5FAE17 /* SKAudioFileStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKAudioFileStream.m; sourceTree = "<group>"; };
-		14A8F12B9248E34E340DF3221E739571 /* SKMicrophoneSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKMicrophoneSource.m; sourceTree = "<group>"; };
+		08BD19FB7773A8A53D4E45858A7C5471 /* SKVideoEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKVideoEncoder.h; sourceTree = "<group>"; };
+		09FDEB9A9B51174D78DEAFCAB92826A5 /* SKBezierCurvesTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKBezierCurvesTool.h; sourceTree = "<group>"; };
+		1675B3176DD155385A44EFB9262CE69B /* UIImage+SKImageHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+SKImageHelper.h"; sourceTree = "<group>"; };
 		1D07B90EE00CB997A581031A34D8E721 /* Pods-SKOpenGLUtilsLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SKOpenGLUtilsLib.release.xcconfig"; sourceTree = "<group>"; };
-		22103948F8B69266190640AB12630AF2 /* SKResource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SKResource.bundle; path = SKOpenGLUtils/Assets/SKResource.bundle; sourceTree = "<group>"; };
-		23BA2EAB4C7E2B7C97F98465A316EF77 /* SKOpenGLUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SKOpenGLUtils-dummy.m"; sourceTree = "<group>"; };
+		22419E3F31990F40EF523A8145928D49 /* SKAudioFileStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKAudioFileStream.m; sourceTree = "<group>"; };
+		259AF48D605F3E925C4C2DC27F9707A8 /* SKOpenGLUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SKOpenGLUtils.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2873E2ACD8022F98385ECDD049262617 /* SKLogManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKLogManager.h; sourceTree = "<group>"; };
+		28F073EC883E32333DC6D10EF10887FC /* SKVideoConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKVideoConfig.m; sourceTree = "<group>"; };
+		300D0429611C2B160904B51BA85CBA61 /* SKRenderTextureView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKRenderTextureView.h; sourceTree = "<group>"; };
+		32AA3B07CF09E4F5D9A12B0187B36BC7 /* SKOpenGLUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SKOpenGLUtils.release.xcconfig; sourceTree = "<group>"; };
+		3501A03E7FD70A3B77DB4A45CC779E19 /* SKMicrophoneSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKMicrophoneSource.m; sourceTree = "<group>"; };
+		368E916CD02E591D02478963E8DA79ED /* SKResource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SKResource.bundle; path = SKOpenGLUtils/Assets/SKResource.bundle; sourceTree = "<group>"; };
+		37E681257C1044D5CC6CC75B8713D016 /* DVVideoPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DVVideoPacket.h; sourceTree = "<group>"; };
 		3AFEDFFF7FFF571E5BB2CACA46C7F51B /* Pods-SKOpenGLUtilsLib-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SKOpenGLUtilsLib-acknowledgements.plist"; sourceTree = "<group>"; };
-		41FFF39061198A7566AB65FDA4EAA2C4 /* UIImage+SKImageHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SKImageHelper.m"; sourceTree = "<group>"; };
-		456781ADB658D2942ED2441D9CEE7F63 /* libPods-SKOpenGLUtilsLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SKOpenGLUtilsLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5095E1CF97B7E290C263335643C52098 /* SKShaderFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKShaderFile.h; sourceTree = "<group>"; };
-		553A4A27621EDB22B4777BFE9817182B /* SKOpenGLUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SKOpenGLUtils.release.xcconfig; sourceTree = "<group>"; };
+		456781ADB658D2942ED2441D9CEE7F63 /* libPods-SKOpenGLUtilsLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SKOpenGLUtilsLib.a"; path = "libPods-SKOpenGLUtilsLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58B0B400EED11CF4225DACCDEBE13623 /* SKVideoConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKVideoConfig.h; sourceTree = "<group>"; };
+		5E6750AA1B0A4D8B40F7F237D3E987D7 /* SKRenderTextureView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKRenderTextureView.m; sourceTree = "<group>"; };
 		5F16C4452F7EB3C3096A17A57BE9B495 /* Pods-SKOpenGLUtilsLib-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SKOpenGLUtilsLib-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6149C748D0AD7F872BA63606FB580EDA /* SKMicrophoneSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKMicrophoneSource.h; sourceTree = "<group>"; };
-		620254C785088FD9DD86CCE4B65CF270 /* NSBundle+SKResource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSBundle+SKResource.h"; sourceTree = "<group>"; };
-		64225108CB82CE797542FCF0A00632DA /* SKPixelBufferRefDisplayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKPixelBufferRefDisplayView.m; sourceTree = "<group>"; };
-		64B384BBCDFB6D58DA137D9DA1B613CA /* UIColor+SKColorHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+SKColorHelper.h"; sourceTree = "<group>"; };
-		8C45408C1C928017639CFC1818195827 /* SKParseAudioData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKParseAudioData.m; sourceTree = "<group>"; };
-		8FFDA3FF10612B02950820855748C820 /* SKOpenGLUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SKOpenGLUtils.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		924D53C3092D59645AD3A7FCFA63F662 /* SKOpenGLUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SKOpenGLUtils-prefix.pch"; sourceTree = "<group>"; };
-		9AE176A8B8F05174F28C43BC328A57F1 /* SKShaderHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKShaderHelper.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2B435F23A00C5E7D4F827F71D64C9BD /* SKPixelBufferRefDisplayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKPixelBufferRefDisplayView.h; sourceTree = "<group>"; };
-		A78CEABB9C2631282141C7817B5A2CB5 /* SKPixelBufferHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKPixelBufferHelper.h; sourceTree = "<group>"; };
-		A9C9407E380F7487FE584521DA1943DE /* SKParseAudioData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKParseAudioData.h; sourceTree = "<group>"; };
-		B0D100000DFB7195FA2FE13E61EBF127 /* libSKOpenGLUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSKOpenGLUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B715FBA6BA091D95622769F989FA9279 /* SKRenderTextureView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKRenderTextureView.m; sourceTree = "<group>"; };
-		B8BD9289452F95D0C0D26D1D250FDB9E /* SKBezierCurvesTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKBezierCurvesTool.m; sourceTree = "<group>"; };
-		B9BCB75FD85DCEDE9BF2844EA9F725A7 /* SKAudioFileStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKAudioFileStream.h; sourceTree = "<group>"; };
-		BA37A1FFF4B7F2A0FB68FCCCE64B547F /* UIColor+SKColorHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SKColorHelper.m"; sourceTree = "<group>"; };
-		BD30EEB307390A782790CA478283780A /* SKShaderHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKShaderHelper.m; sourceTree = "<group>"; };
+		6A17337664E71C260EC727068D02BFA4 /* SKPixelBufferRefDisplayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKPixelBufferRefDisplayView.h; sourceTree = "<group>"; };
+		7653EDDFAD957D2E78B8E5347C8DC49A /* SKShaderHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKShaderHelper.m; sourceTree = "<group>"; };
+		7C6DD7E4C9B7EFC19E4CD670D2BEDC7A /* SKVideoHEVCHardwareDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKVideoHEVCHardwareDecoder.h; sourceTree = "<group>"; };
+		7E2378C764E1BCF2BE1267F3950FE6FB /* SKAudioFileStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKAudioFileStream.h; sourceTree = "<group>"; };
+		839842B4DA0A1F8F5796CFCAE7BBE5FA /* SKPixelBufferRefDisplayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKPixelBufferRefDisplayView.m; sourceTree = "<group>"; };
+		8902920B598B0E37165CE4D1911AAB53 /* DVVideoPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DVVideoPacket.m; sourceTree = "<group>"; };
+		8EAAB1ED9F28E97E7CAB79E34D13E551 /* SKVideoHEVCHardwareDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKVideoHEVCHardwareDecoder.m; sourceTree = "<group>"; };
+		8EEC2D5944F2FC1773510C05EDA2619C /* SKBezierCurvesTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKBezierCurvesTool.m; sourceTree = "<group>"; };
+		96FAC2A00DD3C8E62D40052C19F3C215 /* SKVideoUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKVideoUtils.h; sourceTree = "<group>"; };
+		97E318404E366EB8D2F20664CB882352 /* SKVideoH264HardwareDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKVideoH264HardwareDecoder.h; sourceTree = "<group>"; };
+		9CDDBDF3DC99D2B23462A3A4C0C92DAA /* UIImage+SKImageHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SKImageHelper.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6061629CCC33A8413EF1527BA129ED6 /* SKPixelBufferHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKPixelBufferHelper.m; sourceTree = "<group>"; };
+		A8288516D69DECCFC227AB8D8A15A5AF /* SKOpenGLUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SKOpenGLUtils.debug.xcconfig; sourceTree = "<group>"; };
+		AA937C3B354E5430B26D8A07BDFE537B /* UIColor+SKColorHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+SKColorHelper.h"; sourceTree = "<group>"; };
+		AE5C803F06A2EF9A237300DD4DBCF86C /* SKShaderFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKShaderFile.h; sourceTree = "<group>"; };
+		B0D100000DFB7195FA2FE13E61EBF127 /* libSKOpenGLUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSKOpenGLUtils.a; path = libSKOpenGLUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB9B33D72E519A7199CF7A4480D35EB3 /* SKOpenGLUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SKOpenGLUtils-prefix.pch"; sourceTree = "<group>"; };
+		BFE9DDB88AA9D889E89143B229C40355 /* SKLogManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKLogManager.m; sourceTree = "<group>"; };
 		C35C8A793602015F2DE66B9465062F6D /* Pods-SKOpenGLUtilsLib-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SKOpenGLUtilsLib-resources.sh"; sourceTree = "<group>"; };
+		C387E54F791D75AA06C8424A96A6BE72 /* SKVideoDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKVideoDecoder.h; sourceTree = "<group>"; };
+		C46D9FABCF3E1B6251530327C1813607 /* SKPixelBufferHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKPixelBufferHelper.h; sourceTree = "<group>"; };
+		C63D64712A7C6EDE95384FEC49C8AE62 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		C96AA7271982A5A38CC5B016F7A25285 /* Pods-SKOpenGLUtilsLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SKOpenGLUtilsLib-dummy.m"; sourceTree = "<group>"; };
-		D1B63F0CFC3E0478A1A5D45C1E5D90C3 /* UIImage+SKImageHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+SKImageHelper.h"; sourceTree = "<group>"; };
-		D33B9B89E7649F67D9C6F7F7940C0D3A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D51DFF8B7389638B454C1CA9EA64092C /* SKOpenGLUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SKOpenGLUtils.debug.xcconfig; sourceTree = "<group>"; };
-		D9246ADA9775BBF2D22FFE37C8373401 /* SKPixelBufferHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKPixelBufferHelper.m; sourceTree = "<group>"; };
-		DBCB6F2387F4CC5CE34944091CFD08A6 /* SKBezierCurvesTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKBezierCurvesTool.h; sourceTree = "<group>"; };
-		DDD0101B97506C676A758AAF47172C88 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		EDD8A2698E50CBCF2FD7C23C1E66334E /* NSBundle+SKResource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+SKResource.m"; sourceTree = "<group>"; };
-		F13F8E49EAB2D93A6A5B817C2EAC8FBE /* SKRenderTextureView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKRenderTextureView.h; sourceTree = "<group>"; };
+		CE30EBDF3776281F397EFD1497A749DD /* SKOpenGLUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SKOpenGLUtils-dummy.m"; sourceTree = "<group>"; };
+		CF35E41A982121CEC4C88875C255BA4C /* SKParseAudioData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKParseAudioData.m; sourceTree = "<group>"; };
+		D01D081CD25254F25F27F6093F4BE2D9 /* SKVideoH264HardwareEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKVideoH264HardwareEncoder.m; sourceTree = "<group>"; };
+		D2FD3DA7CEB5E3C3A28B267F05649C45 /* UIColor+SKColorHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SKColorHelper.m"; sourceTree = "<group>"; };
+		D71EAE390D1760B7C50C42731547583F /* SKShaderHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKShaderHelper.h; sourceTree = "<group>"; };
+		D780A03C2EE1A96030DD3F106454C7E3 /* SKVideoHEVCHardwareEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKVideoHEVCHardwareEncoder.m; sourceTree = "<group>"; };
+		D7F2ABD0C889F393D3BCE418D1938349 /* SKVideoUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKVideoUtils.m; sourceTree = "<group>"; };
+		DC2DA67CB9E7856C0C1D3120DC943FC0 /* SKVideoHEVCHardwareEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKVideoHEVCHardwareEncoder.h; sourceTree = "<group>"; };
+		E4AFD89A7F55A623D663055F16EF62A7 /* SKVideoH264HardwareEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKVideoH264HardwareEncoder.h; sourceTree = "<group>"; };
+		E5D6D51D40497604698819B056B725B0 /* NSBundle+SKResource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSBundle+SKResource.h"; sourceTree = "<group>"; };
+		E7D21B08DE94C367222A2F782B8E2153 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		ECB5E8382DEF707303B663626CE4434E /* SKParseAudioData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKParseAudioData.h; sourceTree = "<group>"; };
+		F4B293CA896BB028D59E9718BF6FA35D /* SKMicrophoneSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SKMicrophoneSource.h; sourceTree = "<group>"; };
+		F5A11330E0CAFA94068FBEC0940778B0 /* SKVideoH264HardwareDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SKVideoH264HardwareDecoder.m; sourceTree = "<group>"; };
+		FEA0A0FA89AC2DC1D876040105F961B2 /* NSBundle+SKResource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+SKResource.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		87BE03101F00125DC4F0A3C94B733AB5 /* Frameworks */ = {
+		CE583CC2F699A84FB72724F94DCFDD15 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -105,61 +141,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		016C6E482136EC3A03290473170A638E /* SKOpenGLUtils */ = {
+		25C688E6F2908AE72425662D5FABA59F /* Encoder */ = {
 			isa = PBXGroup;
 			children = (
-				22103948F8B69266190640AB12630AF2 /* SKResource.bundle */,
-				575DC4C0F4E6B2CEAA05058EEE8C39F2 /* Audio */,
-				0BEF9E47480797D5CBE7FCA7B43E7409 /* Category */,
-				F30D49784AAD0237AAFFF5482F9AA973 /* PixelBufferUtils */,
-				1A65063183BC31D25E3551DEC9391184 /* Pod */,
-				93EBC78AECAD623438E3E8DEB1785AEE /* RenderView */,
-				D10DBEC71233C370AD83517443F4D7E7 /* Support Files */,
+				08BD19FB7773A8A53D4E45858A7C5471 /* SKVideoEncoder.h */,
+				E4AFD89A7F55A623D663055F16EF62A7 /* SKVideoH264HardwareEncoder.h */,
+				D01D081CD25254F25F27F6093F4BE2D9 /* SKVideoH264HardwareEncoder.m */,
+				DC2DA67CB9E7856C0C1D3120DC943FC0 /* SKVideoHEVCHardwareEncoder.h */,
+				D780A03C2EE1A96030DD3F106454C7E3 /* SKVideoHEVCHardwareEncoder.m */,
+			);
+			name = Encoder;
+			path = Encoder;
+			sourceTree = "<group>";
+		};
+		2909469922D595F49922687C1F96C484 /* SKOpenGLUtils */ = {
+			isa = PBXGroup;
+			children = (
+				368E916CD02E591D02478963E8DA79ED /* SKResource.bundle */,
+				6C42C173E4F09E24AC7CCD2147B02928 /* Audio */,
+				9968665918BBACF3691A9DD91169763E /* Category */,
+				65A8FE013AD2AF1860236FC96E1A7AAE /* PixelBufferUtils */,
+				AB63DCAF22762EABFCD5859FA1DD20CC /* Pod */,
+				428DD03D169B85C23C39CA7BF97CB42E /* RenderView */,
+				DE54823732FF23C8F4A54F5E3E731746 /* Support Files */,
+				98AAE948549EBF5EEAD3ACB202192A09 /* Untils */,
+				ADDC8002445F70FF2BEF91F00E7EAD07 /* VideoCoder */,
 			);
 			name = SKOpenGLUtils;
 			path = ../../..;
 			sourceTree = "<group>";
 		};
-		0BEF9E47480797D5CBE7FCA7B43E7409 /* Category */ = {
+		428DD03D169B85C23C39CA7BF97CB42E /* RenderView */ = {
 			isa = PBXGroup;
 			children = (
-				620254C785088FD9DD86CCE4B65CF270 /* NSBundle+SKResource.h */,
-				EDD8A2698E50CBCF2FD7C23C1E66334E /* NSBundle+SKResource.m */,
+				6A17337664E71C260EC727068D02BFA4 /* SKPixelBufferRefDisplayView.h */,
+				839842B4DA0A1F8F5796CFCAE7BBE5FA /* SKPixelBufferRefDisplayView.m */,
+				300D0429611C2B160904B51BA85CBA61 /* SKRenderTextureView.h */,
+				5E6750AA1B0A4D8B40F7F237D3E987D7 /* SKRenderTextureView.m */,
 			);
-			name = Category;
-			path = SKOpenGLUtils/Classes/Category;
+			name = RenderView;
+			path = SKOpenGLUtils/Classes/RenderView;
 			sourceTree = "<group>";
 		};
-		1A65063183BC31D25E3551DEC9391184 /* Pod */ = {
+		4DD2F06A312AC565FDC22FFFF7884E25 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				DDD0101B97506C676A758AAF47172C88 /* LICENSE */,
-				D33B9B89E7649F67D9C6F7F7940C0D3A /* README.md */,
-				8FFDA3FF10612B02950820855748C820 /* SKOpenGLUtils.podspec */,
+				58B0B400EED11CF4225DACCDEBE13623 /* SKVideoConfig.h */,
+				28F073EC883E32333DC6D10EF10887FC /* SKVideoConfig.m */,
 			);
-			name = Pod;
+			name = Configuration;
+			path = Configuration;
 			sourceTree = "<group>";
 		};
-		38D862471BDB133EFA7E3A979F0B1392 /* Development Pods */ = {
+		4FA797A31354E6F793AAB7B20A8CF683 /* Decoder */ = {
 			isa = PBXGroup;
 			children = (
-				016C6E482136EC3A03290473170A638E /* SKOpenGLUtils */,
+				C387E54F791D75AA06C8424A96A6BE72 /* SKVideoDecoder.h */,
+				97E318404E366EB8D2F20664CB882352 /* SKVideoH264HardwareDecoder.h */,
+				F5A11330E0CAFA94068FBEC0940778B0 /* SKVideoH264HardwareDecoder.m */,
+				7C6DD7E4C9B7EFC19E4CD670D2BEDC7A /* SKVideoHEVCHardwareDecoder.h */,
+				8EAAB1ED9F28E97E7CAB79E34D13E551 /* SKVideoHEVCHardwareDecoder.m */,
 			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		575DC4C0F4E6B2CEAA05058EEE8C39F2 /* Audio */ = {
-			isa = PBXGroup;
-			children = (
-				B9BCB75FD85DCEDE9BF2844EA9F725A7 /* SKAudioFileStream.h */,
-				08F03146504F3C994D94B05ADC5FAE17 /* SKAudioFileStream.m */,
-				6149C748D0AD7F872BA63606FB580EDA /* SKMicrophoneSource.h */,
-				14A8F12B9248E34E340DF3221E739571 /* SKMicrophoneSource.m */,
-				A9C9407E380F7487FE584521DA1943DE /* SKParseAudioData.h */,
-				8C45408C1C928017639CFC1818195827 /* SKParseAudioData.m */,
-			);
-			name = Audio;
-			path = SKOpenGLUtils/Classes/Audio;
+			name = Decoder;
+			path = Decoder;
 			sourceTree = "<group>";
 		};
 		57A60785827988CFC809AD58468A6985 /* Pods-SKOpenGLUtilsLib */ = {
@@ -176,39 +220,92 @@
 			path = "Target Support Files/Pods-SKOpenGLUtilsLib";
 			sourceTree = "<group>";
 		};
-		93EBC78AECAD623438E3E8DEB1785AEE /* RenderView */ = {
+		65A8FE013AD2AF1860236FC96E1A7AAE /* PixelBufferUtils */ = {
 			isa = PBXGroup;
 			children = (
-				A2B435F23A00C5E7D4F827F71D64C9BD /* SKPixelBufferRefDisplayView.h */,
-				64225108CB82CE797542FCF0A00632DA /* SKPixelBufferRefDisplayView.m */,
-				F13F8E49EAB2D93A6A5B817C2EAC8FBE /* SKRenderTextureView.h */,
-				B715FBA6BA091D95622769F989FA9279 /* SKRenderTextureView.m */,
+				09FDEB9A9B51174D78DEAFCAB92826A5 /* SKBezierCurvesTool.h */,
+				8EEC2D5944F2FC1773510C05EDA2619C /* SKBezierCurvesTool.m */,
+				C46D9FABCF3E1B6251530327C1813607 /* SKPixelBufferHelper.h */,
+				A6061629CCC33A8413EF1527BA129ED6 /* SKPixelBufferHelper.m */,
+				AE5C803F06A2EF9A237300DD4DBCF86C /* SKShaderFile.h */,
+				D71EAE390D1760B7C50C42731547583F /* SKShaderHelper.h */,
+				7653EDDFAD957D2E78B8E5347C8DC49A /* SKShaderHelper.m */,
+				AA937C3B354E5430B26D8A07BDFE537B /* UIColor+SKColorHelper.h */,
+				D2FD3DA7CEB5E3C3A28B267F05649C45 /* UIColor+SKColorHelper.m */,
+				1675B3176DD155385A44EFB9262CE69B /* UIImage+SKImageHelper.h */,
+				9CDDBDF3DC99D2B23462A3A4C0C92DAA /* UIImage+SKImageHelper.m */,
 			);
-			name = RenderView;
-			path = SKOpenGLUtils/Classes/RenderView;
+			name = PixelBufferUtils;
+			path = SKOpenGLUtils/Classes/PixelBufferUtils;
+			sourceTree = "<group>";
+		};
+		6C42C173E4F09E24AC7CCD2147B02928 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				7E2378C764E1BCF2BE1267F3950FE6FB /* SKAudioFileStream.h */,
+				22419E3F31990F40EF523A8145928D49 /* SKAudioFileStream.m */,
+				F4B293CA896BB028D59E9718BF6FA35D /* SKMicrophoneSource.h */,
+				3501A03E7FD70A3B77DB4A45CC779E19 /* SKMicrophoneSource.m */,
+				ECB5E8382DEF707303B663626CE4434E /* SKParseAudioData.h */,
+				CF35E41A982121CEC4C88875C255BA4C /* SKParseAudioData.m */,
+			);
+			name = Audio;
+			path = SKOpenGLUtils/Classes/Audio;
+			sourceTree = "<group>";
+		};
+		98AAE948549EBF5EEAD3ACB202192A09 /* Untils */ = {
+			isa = PBXGroup;
+			children = (
+				2873E2ACD8022F98385ECDD049262617 /* SKLogManager.h */,
+				BFE9DDB88AA9D889E89143B229C40355 /* SKLogManager.m */,
+				96FAC2A00DD3C8E62D40052C19F3C215 /* SKVideoUtils.h */,
+				D7F2ABD0C889F393D3BCE418D1938349 /* SKVideoUtils.m */,
+			);
+			name = Untils;
+			path = SKOpenGLUtils/Classes/Untils;
+			sourceTree = "<group>";
+		};
+		9968665918BBACF3691A9DD91169763E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E5D6D51D40497604698819B056B725B0 /* NSBundle+SKResource.h */,
+				FEA0A0FA89AC2DC1D876040105F961B2 /* NSBundle+SKResource.m */,
+			);
+			name = Category;
+			path = SKOpenGLUtils/Classes/Category;
+			sourceTree = "<group>";
+		};
+		AB63DCAF22762EABFCD5859FA1DD20CC /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C63D64712A7C6EDE95384FEC49C8AE62 /* LICENSE */,
+				E7D21B08DE94C367222A2F782B8E2153 /* README.md */,
+				259AF48D605F3E925C4C2DC27F9707A8 /* SKOpenGLUtils.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		ADDC8002445F70FF2BEF91F00E7EAD07 /* VideoCoder */ = {
+			isa = PBXGroup;
+			children = (
+				4DD2F06A312AC565FDC22FFFF7884E25 /* Configuration */,
+				4FA797A31354E6F793AAB7B20A8CF683 /* Decoder */,
+				25C688E6F2908AE72425662D5FABA59F /* Encoder */,
+				F5C6A137AAA30FDDF7EC73F0E42006D1 /* Packet */,
+			);
+			name = VideoCoder;
+			path = SKOpenGLUtils/Classes/VideoCoder;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				38D862471BDB133EFA7E3A979F0B1392 /* Development Pods */,
+				F39A788F0C837A0026832169AE60165B /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				F6F0F9613EDA19B51351BE023854A42C /* Products */,
 				FCE6941BFA8619D201D5B8AF92AB28A1 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D10DBEC71233C370AD83517443F4D7E7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				23BA2EAB4C7E2B7C97F98465A316EF77 /* SKOpenGLUtils-dummy.m */,
-				924D53C3092D59645AD3A7FCFA63F662 /* SKOpenGLUtils-prefix.pch */,
-				D51DFF8B7389638B454C1CA9EA64092C /* SKOpenGLUtils.debug.xcconfig */,
-				553A4A27621EDB22B4777BFE9817182B /* SKOpenGLUtils.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/SKOpenGLUtilsLib/Pods/Target Support Files/SKOpenGLUtils";
 			sourceTree = "<group>";
 		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
@@ -218,23 +315,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F30D49784AAD0237AAFFF5482F9AA973 /* PixelBufferUtils */ = {
+		DE54823732FF23C8F4A54F5E3E731746 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DBCB6F2387F4CC5CE34944091CFD08A6 /* SKBezierCurvesTool.h */,
-				B8BD9289452F95D0C0D26D1D250FDB9E /* SKBezierCurvesTool.m */,
-				A78CEABB9C2631282141C7817B5A2CB5 /* SKPixelBufferHelper.h */,
-				D9246ADA9775BBF2D22FFE37C8373401 /* SKPixelBufferHelper.m */,
-				5095E1CF97B7E290C263335643C52098 /* SKShaderFile.h */,
-				9AE176A8B8F05174F28C43BC328A57F1 /* SKShaderHelper.h */,
-				BD30EEB307390A782790CA478283780A /* SKShaderHelper.m */,
-				64B384BBCDFB6D58DA137D9DA1B613CA /* UIColor+SKColorHelper.h */,
-				BA37A1FFF4B7F2A0FB68FCCCE64B547F /* UIColor+SKColorHelper.m */,
-				D1B63F0CFC3E0478A1A5D45C1E5D90C3 /* UIImage+SKImageHelper.h */,
-				41FFF39061198A7566AB65FDA4EAA2C4 /* UIImage+SKImageHelper.m */,
+				CE30EBDF3776281F397EFD1497A749DD /* SKOpenGLUtils-dummy.m */,
+				BB9B33D72E519A7199CF7A4480D35EB3 /* SKOpenGLUtils-prefix.pch */,
+				A8288516D69DECCFC227AB8D8A15A5AF /* SKOpenGLUtils.debug.xcconfig */,
+				32AA3B07CF09E4F5D9A12B0187B36BC7 /* SKOpenGLUtils.release.xcconfig */,
 			);
-			name = PixelBufferUtils;
-			path = SKOpenGLUtils/Classes/PixelBufferUtils;
+			name = "Support Files";
+			path = "Example/SKOpenGLUtilsLib/Pods/Target Support Files/SKOpenGLUtils";
+			sourceTree = "<group>";
+		};
+		F39A788F0C837A0026832169AE60165B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2909469922D595F49922687C1F96C484 /* SKOpenGLUtils */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F5C6A137AAA30FDDF7EC73F0E42006D1 /* Packet */ = {
+			isa = PBXGroup;
+			children = (
+				37E681257C1044D5CC6CC75B8713D016 /* DVVideoPacket.h */,
+				8902920B598B0E37165CE4D1911AAB53 /* DVVideoPacket.m */,
+			);
+			name = Packet;
+			path = Packet;
 			sourceTree = "<group>";
 		};
 		F6F0F9613EDA19B51351BE023854A42C /* Products */ = {
@@ -264,22 +372,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE12CA0061394B45B44B6AA6B9AAD4F7 /* Headers */ = {
+		584459FB11F751E17C95D16E66341A6F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C08CFFF0D3C1A6AA22109CBE8730962 /* SKPixelBufferRefDisplayView.h in Headers */,
-				25EA27761945A7934A83FDEA6361A0C4 /* SKRenderTextureView.h in Headers */,
-				4E970CFFCCA58BC8372A02D98B01F0C6 /* NSBundle+SKResource.h in Headers */,
-				FB7454AFC2622F0889984167C20A2F71 /* SKAudioFileStream.h in Headers */,
-				38DCE5B915A9FC9FE607B27293352AD0 /* SKBezierCurvesTool.h in Headers */,
-				7C2450BE193C520619F35066FA57CB85 /* SKMicrophoneSource.h in Headers */,
-				DEF7B68BF83787B02BFB2793DFE6AC47 /* SKParseAudioData.h in Headers */,
-				5D3E74BD83447828FFC697A0D40C00CE /* SKPixelBufferHelper.h in Headers */,
-				24B37430983F257634007F4D6BCED502 /* SKShaderFile.h in Headers */,
-				BE9EA602A6DDFFAF608DAE17E7066C1B /* SKShaderHelper.h in Headers */,
-				0B3E8EABA90A6C4EF19BB2F1E9A3D276 /* UIColor+SKColorHelper.h in Headers */,
-				BF136B7B83D071119E45219962F2A891 /* UIImage+SKImageHelper.h in Headers */,
+				0CB0BE5C4797772DBB4900B0447621B7 /* DVVideoPacket.h in Headers */,
+				D438219C3849CFA72DC8E7DC90A706C5 /* NSBundle+SKResource.h in Headers */,
+				C21AA6E86E57AD25A8DB4C5D2D625D30 /* SKAudioFileStream.h in Headers */,
+				A946A2AF931A8F2A3258291685DF51C6 /* SKBezierCurvesTool.h in Headers */,
+				96341CF2DAFCA44953FC776C9DE61276 /* SKLogManager.h in Headers */,
+				965CB92C54B9C171EF4B824367E36914 /* SKMicrophoneSource.h in Headers */,
+				A197482915882AA93A2EC5B2D72930DC /* SKParseAudioData.h in Headers */,
+				593CDD4589038FE07DC393653885B874 /* SKPixelBufferHelper.h in Headers */,
+				A4A0664DA16E3FCBD9D4AF98C31AC9D4 /* SKPixelBufferRefDisplayView.h in Headers */,
+				E83328FE9EFDAE0628F70C4BB10982D8 /* SKRenderTextureView.h in Headers */,
+				5F1D3840CC3EB154A6530F62F8AF628C /* SKShaderFile.h in Headers */,
+				6B303C887D5C92A433B0475321A1E882 /* SKShaderHelper.h in Headers */,
+				2BDA8B77ADC18B4FE9F70E70EEB9DCEA /* SKVideoConfig.h in Headers */,
+				72519FB713474AA278B58FC44C03FCCE /* SKVideoDecoder.h in Headers */,
+				1187848160D99C9229B8B253B5D80A60 /* SKVideoEncoder.h in Headers */,
+				79A72CD8BD5C725586EFFFC6563A4970 /* SKVideoH264HardwareDecoder.h in Headers */,
+				E1F994FA6FF56049F94F04BF8FA085EA /* SKVideoH264HardwareEncoder.h in Headers */,
+				9067B0B5A120D9AEC3C5B8B8282F34C8 /* SKVideoHEVCHardwareDecoder.h in Headers */,
+				334F12E30769FE3A43F60040ADF1DEDE /* SKVideoHEVCHardwareEncoder.h in Headers */,
+				7E1392A7F94588BE6DB5288E76AB1CA2 /* SKVideoUtils.h in Headers */,
+				1C0B350C59C6E52E600331AEBAFA72F6 /* UIColor+SKColorHelper.h in Headers */,
+				2DFC116CEF582789DC5EEB0439151FD9 /* UIImage+SKImageHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +415,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C2D03B4114A1D451EC1EBD85A1DA00D0 /* PBXTargetDependency */,
+				4A147C63B8B517A0066EFDD84C558A99 /* PBXTargetDependency */,
 			);
 			name = "Pods-SKOpenGLUtilsLib";
 			productName = "Pods-SKOpenGLUtilsLib";
@@ -306,11 +424,11 @@
 		};
 		8418D0A084138F0C9FBEE821FF1A3761 /* SKOpenGLUtils */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB02900CD7045587C4AE41D35DCCD23E /* Build configuration list for PBXNativeTarget "SKOpenGLUtils" */;
+			buildConfigurationList = F68865E23613D5EE29E1A75C3E125204 /* Build configuration list for PBXNativeTarget "SKOpenGLUtils" */;
 			buildPhases = (
-				CE12CA0061394B45B44B6AA6B9AAD4F7 /* Headers */,
-				B2FDF7230A52C174E15A289338845929 /* Sources */,
-				87BE03101F00125DC4F0A3C94B733AB5 /* Frameworks */,
+				584459FB11F751E17C95D16E66341A6F /* Headers */,
+				7D1E87A0792CE799183F8F93EB15DC03 /* Sources */,
+				CE583CC2F699A84FB72724F94DCFDD15 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,33 +476,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B2FDF7230A52C174E15A289338845929 /* Sources */ = {
+		7D1E87A0792CE799183F8F93EB15DC03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E624916811DB1E601CC1B3AA03B54200 /* SKPixelBufferRefDisplayView.m in Sources */,
-				748FE0FE434234B383458A46DF1832BD /* SKRenderTextureView.m in Sources */,
-				F312AB47648B8B1E92FCE121E06FB4C7 /* NSBundle+SKResource.m in Sources */,
-				10790D68FB63B2B341436729A94EDA56 /* SKAudioFileStream.m in Sources */,
-				E13996FE3ACDC809EE049858397C780B /* SKBezierCurvesTool.m in Sources */,
-				8F07756CB12D4AB9612B0E37F09BF5EF /* SKMicrophoneSource.m in Sources */,
-				EBE9A49E0602686D1B74590D4050A58B /* SKOpenGLUtils-dummy.m in Sources */,
-				FC504C2104C54203B4501F0CB31D1CFB /* SKParseAudioData.m in Sources */,
-				1B86F6D20A84E6F93EE1AEE020042D8F /* SKPixelBufferHelper.m in Sources */,
-				DB3C5F03CFFC6807616B6BFBB8A7C0BB /* SKShaderHelper.m in Sources */,
-				772480B86144AB4546724CA6DDA2B0FB /* UIColor+SKColorHelper.m in Sources */,
-				4DCD84F05DD5D3E647381DE01386300D /* UIImage+SKImageHelper.m in Sources */,
+				D040A93F77C886EB697F236F7998027D /* DVVideoPacket.m in Sources */,
+				8B9056670D25249EB9AC045E883EEED0 /* NSBundle+SKResource.m in Sources */,
+				77A442BEA32070EFECC95307B93F0A3A /* SKAudioFileStream.m in Sources */,
+				B192B009FC37FCABC8810F033E354129 /* SKBezierCurvesTool.m in Sources */,
+				96895792E8F0852A722F5700E7B5F67B /* SKLogManager.m in Sources */,
+				031F082412F460C14B3B562352CDECBB /* SKMicrophoneSource.m in Sources */,
+				EDD46C458CFC66BC5BED8192E7D6E18C /* SKOpenGLUtils-dummy.m in Sources */,
+				DFA56FED75525DE0D89922211E620648 /* SKParseAudioData.m in Sources */,
+				08F355D07AA1FE0EFDDDFFEB3D158AD7 /* SKPixelBufferHelper.m in Sources */,
+				A1590ECA2DDB0943B4C8104FBC6FC99A /* SKPixelBufferRefDisplayView.m in Sources */,
+				0D0DA400745813BEA4F9F35EFD05109F /* SKRenderTextureView.m in Sources */,
+				EB04971789FE22EC22194F45CE12A0B4 /* SKShaderHelper.m in Sources */,
+				2EB33E91325B0763496F14FB966940DA /* SKVideoConfig.m in Sources */,
+				B1CDE052CBCAA860685DF432E4E3FE9B /* SKVideoH264HardwareDecoder.m in Sources */,
+				0CCCAFF5D2809A13871F6F07EB06BAC9 /* SKVideoH264HardwareEncoder.m in Sources */,
+				071C9E59FDFC2281C19F752809EE53CE /* SKVideoHEVCHardwareDecoder.m in Sources */,
+				CE83198897A1D14000B8D0911C309D04 /* SKVideoHEVCHardwareEncoder.m in Sources */,
+				6D742CA75C880E87F3608508CE486486 /* SKVideoUtils.m in Sources */,
+				B178538FBD895C5BEF38133A2EEB6A3E /* UIColor+SKColorHelper.m in Sources */,
+				F7FCB69D7A174C3958C3CE208B40644A /* UIImage+SKImageHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C2D03B4114A1D451EC1EBD85A1DA00D0 /* PBXTargetDependency */ = {
+		4A147C63B8B517A0066EFDD84C558A99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SKOpenGLUtils;
 			target = 8418D0A084138F0C9FBEE821FF1A3761 /* SKOpenGLUtils */;
-			targetProxy = B7D65F10A9C6290CAEF5DE5952EA9CCA /* PBXContainerItemProxy */;
+			targetProxy = EF76FC52CD451E093B9FDC644D222AF8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -455,6 +581,28 @@
 			};
 			name = Debug;
 		};
+		40BB0339F34EEF8B52BBDB47A3338D6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8288516D69DECCFC227AB8D8A15A5AF /* SKOpenGLUtils.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SKOpenGLUtils/SKOpenGLUtils-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SKOpenGLUtils;
+				PRODUCT_NAME = SKOpenGLUtils;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		43D0C9BCD372C68BD274503C5D44C9CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0758DE4FB6E81DC3234E68470ACB81AB /* Pods-SKOpenGLUtilsLib.debug.xcconfig */;
@@ -475,51 +623,6 @@
 			};
 			name = Debug;
 		};
-		58CFFF01D7A0C9438321B08E09BC3BFE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 553A4A27621EDB22B4777BFE9817182B /* SKOpenGLUtils.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SKOpenGLUtils/SKOpenGLUtils-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SKOpenGLUtils;
-				PRODUCT_NAME = SKOpenGLUtils;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		7835708FE057C51728D33CC471DA040D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D51DFF8B7389638B454C1CA9EA64092C /* SKOpenGLUtils.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SKOpenGLUtils/SKOpenGLUtils-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SKOpenGLUtils;
-				PRODUCT_NAME = SKOpenGLUtils;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		7FCFF1EA38E8B1E4A10A48F7DB94A5F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1D07B90EE00CB997A581031A34D8E721 /* Pods-SKOpenGLUtilsLib.release.xcconfig */;
@@ -536,6 +639,29 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BACAAEB6D703F1E0ABFF5009C6168ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32AA3B07CF09E4F5D9A12B0187B36BC7 /* SKOpenGLUtils.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SKOpenGLUtils/SKOpenGLUtils-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SKOpenGLUtils;
+				PRODUCT_NAME = SKOpenGLUtils;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -624,11 +750,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB02900CD7045587C4AE41D35DCCD23E /* Build configuration list for PBXNativeTarget "SKOpenGLUtils" */ = {
+		F68865E23613D5EE29E1A75C3E125204 /* Build configuration list for PBXNativeTarget "SKOpenGLUtils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7835708FE057C51728D33CC471DA040D /* Debug */,
-				58CFFF01D7A0C9438321B08E09BC3BFE /* Release */,
+				40BB0339F34EEF8B52BBDB47A3338D6C /* Debug */,
+				BACAAEB6D703F1E0ABFF5009C6168ECF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

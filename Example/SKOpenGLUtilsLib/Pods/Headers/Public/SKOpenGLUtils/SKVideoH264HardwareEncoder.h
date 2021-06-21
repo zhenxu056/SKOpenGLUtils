@@ -1,0 +1,1 @@
+../../../../../../SKOpenGLUtils/Classes/VideoCoder/Encoder/SKVideoH264HardwareEncoder.h
