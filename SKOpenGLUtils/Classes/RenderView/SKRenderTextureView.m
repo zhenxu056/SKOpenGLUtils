@@ -166,16 +166,16 @@ enum {
     *programPointer = glCreateProgram();
     
     // Create and compile vertex shader.
-    vertShaderPathname = [[NSBundle mainBundle] pathForResource:vertexShaderName ofType:@"rendVsh"];
-    if (![self compileShader:&vertexShader type:GL_VERTEX_SHADER shaderString:rendVsh]) {
+    vertShaderPathname = [[NSBundle mainBundle] pathForResource:vertexShaderName ofType:@"skrendVsh"];
+    if (![self compileShader:&vertexShader type:GL_VERTEX_SHADER shaderString:skrendVsh]) {
         
         NSLog(@"STGLPreview : failed to compile vertex shader");
         return NO;
     }
     
     // Create and compile fragment shader.
-    fragShaderPathname = [[NSBundle mainBundle] pathForResource:fragmentShaderName ofType:@"rendFsh"];
-    if (![self compileShader:&fragShader type:GL_FRAGMENT_SHADER shaderString:rendFsh]) {
+    fragShaderPathname = [[NSBundle mainBundle] pathForResource:fragmentShaderName ofType:@"skrendFsh"];
+    if (![self compileShader:&fragShader type:GL_FRAGMENT_SHADER shaderString:skrendFsh]) {
         
         NSLog(@"STGLPreview : failed to compile fragment shader");
         return NO;
@@ -232,7 +232,7 @@ enum {
     return YES;
 }
 
-char rendVsh[] = "attribute vec4 position;\
+char skrendVsh[] = "attribute vec4 position;\
 attribute vec4 inputTextureCoordinate;\
 varying vec2 textureCoordinate;\
 void main()\
@@ -241,7 +241,7 @@ gl_Position = position;\
 textureCoordinate = vec2(inputTextureCoordinate.x, 1.0 - inputTextureCoordinate.y);\
 }";
 
-char rendFsh[] = "varying highp vec2 textureCoordinate;\
+char skrendFsh[] = "varying highp vec2 textureCoordinate;\
 uniform sampler2D videoFrame;\
 void main()\
 {\

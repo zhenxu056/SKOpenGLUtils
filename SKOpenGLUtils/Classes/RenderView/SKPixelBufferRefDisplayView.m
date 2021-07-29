@@ -14,7 +14,7 @@
 #define STRINGIZE2(x)    STRINGIZE(x)
 #define SHADER_STRING(text) @ STRINGIZE2(text)
 
-NSString *const GTVFUYUVToRGBAFragmentShaderString = SHADER_STRING
+NSString *const SKGTVFUYUVToRGBAFragmentShaderString = SHADER_STRING
 (
  varying highp vec2 textureCoordinate;
  
@@ -35,7 +35,7 @@ NSString *const GTVFUYUVToRGBAFragmentShaderString = SHADER_STRING
  }
  );
 
-NSString *const GTVFURGBAFragmentShaderString = SHADER_STRING
+NSString *const SKGTVFURGBAFragmentShaderString = SHADER_STRING
 (
  uniform sampler2D inputImageTexture;
  
@@ -47,7 +47,7 @@ NSString *const GTVFURGBAFragmentShaderString = SHADER_STRING
 }
  );
 
-NSString *const GTVFUVertexShaderString = SHADER_STRING
+NSString *const SKGTVFUVertexShaderString = SHADER_STRING
 (
  attribute vec4 position;
  attribute vec4 inputTextureCoordinate;
@@ -61,7 +61,7 @@ NSString *const GTVFUVertexShaderString = SHADER_STRING
  }
  );
 
-NSString *const GTVFUPointsFrgShaderString = SHADER_STRING
+NSString *const SKGTVFUPointsFrgShaderString = SHADER_STRING
 (
  precision mediump float;
  
@@ -74,7 +74,7 @@ NSString *const GTVFUPointsFrgShaderString = SHADER_STRING
  
  );
 
-NSString *const GTVFUPointsVtxShaderString = SHADER_STRING
+NSString *const SKGTVFUPointsVtxShaderString = SHADER_STRING
 (
  attribute vec4 position;
  
@@ -500,13 +500,13 @@ enum
     }
     
     // Create and compile the vertex shader.
-    if (![self compileShader:&vertShader type:GL_VERTEX_SHADER string:GTVFUVertexShaderString]) {
+    if (![self compileShader:&vertShader type:GL_VERTEX_SHADER string:SKGTVFUVertexShaderString]) {
         NSLog(@"Failed to compile vertex shader");
         return NO;
     }
     
     // Create and compile fragment shader.
-    if (![self compileShader:&fragShader type:GL_FRAGMENT_SHADER string:GTVFURGBAFragmentShaderString]) {
+    if (![self compileShader:&fragShader type:GL_FRAGMENT_SHADER string:SKGTVFURGBAFragmentShaderString]) {
         NSLog(@"Failed to compile fragment shader");
         return NO;
     }
@@ -565,13 +565,13 @@ enum
     }
     
     // Create and compile the vertex shader.
-    if (![self compileShader:&vertShader type:GL_VERTEX_SHADER string:GTVFUVertexShaderString]) {
+    if (![self compileShader:&vertShader type:GL_VERTEX_SHADER string:SKGTVFUVertexShaderString]) {
         NSLog(@"Failed to compile vertex shader");
         return NO;
     }
     
     // Create and compile fragment shader.
-    if (![self compileShader:&fragShader type:GL_FRAGMENT_SHADER string:GTVFUYUVToRGBAFragmentShaderString]) {
+    if (![self compileShader:&fragShader type:GL_FRAGMENT_SHADER string:SKGTVFUYUVToRGBAFragmentShaderString]) {
         NSLog(@"Failed to compile fragment shader");
         return NO;
     }
@@ -632,13 +632,13 @@ enum
     pointProgram = glCreateProgram();
     
     // Create and compile the vertex shader.
-    if (![self compileShader:&vertShader type:GL_VERTEX_SHADER string:GTVFUPointsVtxShaderString]) {
+    if (![self compileShader:&vertShader type:GL_VERTEX_SHADER string:SKGTVFUPointsVtxShaderString]) {
         NSLog(@"Failed to compile vertex shader");
         return NO;
     }
     
     // Create and compile fragment shader.
-    if (![self compileShader:&fragShader type:GL_FRAGMENT_SHADER string:GTVFUPointsFrgShaderString]) {
+    if (![self compileShader:&fragShader type:GL_FRAGMENT_SHADER string:SKGTVFUPointsFrgShaderString]) {
         NSLog(@"Failed to compile fragment shader");
         return NO;
     }
