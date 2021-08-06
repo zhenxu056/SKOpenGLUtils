@@ -10,8 +10,8 @@
 @implementation NSBundle (SKResource)
 
 + (NSBundle *)SKBundle {
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"SKResource" ofType:@"bundle"];
-    NSString *path = [[[NSBundle bundleForClass: [self class]] resourcePath] stringByAppendingPathComponent:@"SKResource.bundle"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"SKResource" ofType:@"bundle"];
+//    NSString *path = [[[NSBundle bundleForClass: [self class]] resourcePath] stringByAppendingPathComponent:@"SKOpenGLUtils.bundle"];
     NSBundle *bundle = [NSBundle bundleWithPath:path];
     return bundle;
 }

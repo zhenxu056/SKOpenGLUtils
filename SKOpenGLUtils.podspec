@@ -24,11 +24,11 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
   s.source_files = 'SKOpenGLUtils/Classes/**/*'
   s.public_header_files = 'SKOpenGLUtils/Classes/**/*.h'
-  s.resources = "SKOpenGLUtils/Assets/*"
+#  s.resources = "SKOpenGLUtils/Assets/*"
   
-#  s.resource_bundles = {
-#      'MGTEDAsset' => ['MGTED_iOS_FFmpeg/Assets/*']
-#  }
+  s.resource_bundles = {
+      'MGTEDAsset' => ['SKOpenGLUtils/Assets/*']
+  }
   
   
 end

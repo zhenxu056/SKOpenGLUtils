@@ -57,7 +57,7 @@
         _context = context;
         [self setupYUVConversionProgram];
         [self setupNormalProgram];
-        [self setupVBO];
+//        [self setupVBO];
     }
     return self;
 }
@@ -286,6 +286,9 @@
                                     textureSize:(CGSize)textureSize
                                     pixelBuffer:(CVPixelBufferRef)pixelBuffer {
     [EAGLContext setCurrentContext:self.context];
+    if (_VBO == 0) {
+        [self setupVBO];
+    }
 
     OSType type = CVPixelBufferGetPixelFormatType(pixelBuffer);
     if (type != kCVPixelFormatType_32BGRA) {
